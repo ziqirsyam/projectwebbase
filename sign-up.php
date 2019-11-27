@@ -21,6 +21,9 @@
 		<label for="username"><b>Username</b></label>
 		<input type="text"placehlder="username"name="uname"/>
 		<br>
+		<label for="Nophone"><b>No.Phone</b></label>
+		<input type="text"placehlder="nophone"name="nophone"/>
+		<br>
 		<label for="email"><b>Email</b></label>
 		<input type="text"placeholder="email id"name="email"required />
 		<br>
@@ -37,22 +40,22 @@
 		<label for="state"><b>State: </b></label>
 		<select name="state">
 		<option value="1">(Please select a State)</option>
-		<option value="KUL">Kuala Lumpur</option>
-		<option value="LBN">Labuan</option>
-		<option value="PJY">Putrajaya</option>
-		<option value="JHR">Johor</option>
-		<option value="KDH">Kedah</option>
-		<option value="KTN">Kelantan</option>
-		<option value="MLK">Melaka</option>
-		<option value="NSN">N.Sembilan</option>
-		<option value="PHG">Pahang</option>
-		<option value="PRK">Perak</option>
-		<option value="PLS">Perlis</option>
-		<option value="PNG">P.Pinang</option>
-		<option value="SBH">Sabah</option>
-		<option value="SWK">Sarawak</option>
-		<option value="SGR">Selangor</option>
-		<option value="TRG">Terengganu</option>
+		<option value="KUALA LUMPUR">Kuala Lumpur</option>
+		<option value="LABUAN">Labuan</option>
+		<option value="PUTRAJAYA">Putrajaya</option>
+		<option value="JOHOR">Johor</option>
+		<option value="KEDAH">Kedah</option>
+		<option value="KELANTAN">Kelantan</option>
+		<option value="MELAKA">Melaka</option>
+		<option value="N.SEMBILAN">N.Sembilan</option>
+		<option value="PAHANG">Pahang</option>
+		<option value="PERAK">Perak</option>
+		<option value="PELIS">Perlis</option>
+		<option value="P.PINANG">P.Pinang</option>
+		<option value="SABAH">Sabah</option>
+		<option value="SARAWAK">Sarawak</option>
+		<option value="SELANGOR">Selangor</option>
+		<option value="TERANGGANU">Terengganu</option>
 		</select>
 		<br><br>
 		<p>
