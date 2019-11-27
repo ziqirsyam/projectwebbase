@@ -5,19 +5,21 @@
 </head>
 <body>
 	<?php include 'generalnavbar.php'?>
-	<h1>Sign-in Page</h1>
-	<form action="" method="post">
-		<div>
-			<h2>Sign Up Form</h2>
-			<hr>
-			<label for="user">Username :</label>
-			<input type="text" name="user" placeholder="Enter username..." required>
-		</div>
-		<div>
-			<button type="reset">Reset</button>
-			<button type="submit">Login</button>
-		</div>
-	</form>
+	<div class="form">
+	   	<form class="login-form" action="" method="post">
+	   	<img src="admin2.png"alt="adminpic"class="form-img"/><br>
+	   	<h1><b>Login</b><br></h1>
+	   	<p>Username</p>
+	   	<input type="text"placeholder="username"/><br>
+	   	<p>Password</p>
+	   	<input type="password"placeholder="password"/><br>
+	    <button type="submit" class="button" name="submit" value="singinbtn">Log in</button>
+	    <p class="message">Want to Register?<a href="signup.html">Sign Up</a></p>
+
+	    </form>
+	</div>
+	</div>
+
 	<?php include 'footer.php'?>
 </body>
 </html>
