@@ -7,42 +7,6 @@
 	<?php include 'usernavbar.php'?>
 	<h1>Hompage User</h1>
 	<?php include '../footer.php'?>
-	<header><!--top navigation-->
-		<div class="head1">MI Store</div>
-		<div class="head2">Welcome to MiStore </div>
-	</header>
-
-	<div class="navitop">
-		<a href="#home">username</a>
-		<div class="cart">
-			<a href="#cart">Cart</a></div>
-		<div class="signin">
-			<a href="signup.html">Sign up</a></div>
-		<div class="signout">
-			<a href="index.html">Sign Out</a></div>
-	</div>
-
-	<!--side navigation-->
-	<section>
-		<nav>
-			<ul>
-				<li><a href="userdetail.html">User Detail</a></li>
-				<li><div class="dropdown">
-					<button class="dropbtn">Category
-						<i class="fa fa-caret-down"></i>
-					</button>
-					<div class="dropdown_content">
-						<a href="Laptop.html">Computer</a>
-						<a href="Smartphone.html">Smartphone</a>
-						<a href="Tablet.html">Tablet</a>
-						<a href="Smartwatch.html">Smart Watch</a>
-						<a href="Accessories.html">Accessories</a>
-					</div>
-					</div>
-				</li>
-			</ul>
-		</nav>
-	</section>
 
 	<article>
 		<div class="search_container">
@@ -65,9 +29,7 @@
 			<a href="smarthwatch2.html"><img src="smartwatch2.jpg">Smartwatch2</a><br>
 
 	</article>
-	<footer>
-		<P>© Mistore</P>
-	</footer>
+	<?php include '../footer.php'?>
 	
 </body>
 </html>
