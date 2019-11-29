@@ -1,69 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>HomePage</title>
-</head>
-<body>
-	<?php include 'generalnavbar.php'?>
-	<h1>Index - Page</h1>
-	<?php include 'footer.php'?>
-	<header><!--top navigation-->
-		<div class="head1">MI Store</div>
-		<div class="head2">Welcome to MiStore </div>
+<header><!--top navigation-->
+		<title>HomePage</title>
+		<link rel="stylesheet" type="text/css" href="indexdeis.css">
 	</header>
-
-	<div class="navitop">
-		<a href="#home"> Welcome user</a>
-		<div class="cart">
-			<a href="#cart">Cart</a></div>
-		<div class="signin">
-			<a href="signin.html">Sign In</a></div>
-		<div class="signup">
-			<a href="signup.html">Sign Up</a></div>
-	</div>
+	<nav>
 
 	<!--side navigation-->
 	<section>
 		<nav>
-			<ul>
-				<li><a href="userdetail.html">User Detail</a></li>
-				<li><div class="dropdown">
-					<button class="dropbtn">Category
-						<i class="fa fa-caret-down"></i>
-					</button>
-					<div class="dropdown_content">
-						<a href="Laptop.html">Computer</a>
-						<a href="Smartphone.html">Smartphone</a>
-						<a href="Tablet.html">Tablet</a>
-						<a href="Smartwatch.html">Smart Watch</a>
-						<a href="Accessories.html">Accessories</a>
-					</div>
-					</div>
-				</li>
-			</ul>
+	<ul id="navitop" class ="navitop">
+		<div class="flex-container">
+			
+		    <li class="dropdown">
+		     <a class="dropbtn">Dropdown</a>
+		    <div class="dropdown-content">
+			<a href="#">Sign Up</a>
+     		<a href="#">Log in</a>
+		</div></li> 
+		<li class="list"><a href="#Mistore">Mi Store</a></li>
+  			<li class="list"><a href="#news">Apple</a></li>
+  			<li class="list"><a href="#contact">Samsung</a></li>
+  			<li class="list"><a href="#about">Sony</a></li>
+  			<li class="list"><a href="#about">Xiaomi</a></li>
+  			<li class="list"><a href="#about">Oppo</a></li>
+  			<li class="list"><a href="#about">Cart</a></li>
+  		<form action="/action_page.php">
+  			<li class="Search"><a href="#about"><input type="text" name="search" placeholder="Search.."></a></li>
+  		</form>
+
+  				
+  	</div>
+	</ul>
 		</nav>
 	</section>
-
 	<article>
-		<div class="search_container">
-			<form action="/action_page.php">
-				<input type="text"placeholder="Search.."name="search">
-				<button type="submit"><i class="fa fa-search"></i></button>
-			</form>
-		</div>
+	<div class="flex-container">
+			<div class="board"><a href="Apple.html"><img src="">Learn more</a><br></div>
+			<div class="Samsung"><a href="Samsung.html"><img src="">Learn more</a><br></div>
+			<div class="Sony"><a href="Sony.html"><img src="">Learn more</a><br></div>
+			<div class="Xiaomi"><a  href="Xiaomi.html"><img src="">Learn more</a><br></div>
+			<div class="Oppo"><a href="Oppo.html"><img src="">Learn more</a><br></div>
+	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
 
-		<div class="contentpage">
-			<a href="smartphone1.html"><img src="smartphone1.jpg">Smartphone1</a><br>
-			<a href="smartphone2.html"><img src="smartphone2.jpg">Smartphone2</a><br>
-			<a href="laptop1.html"><img src="laptop1.jpg">Laptop1</a><br>
-			<a href="laptop2.html"><img src="laptop2.jpg">Laptop2</a><br>
-			<a href="laptop3.html"><img src="laptop3.jpg">Laptop3</a><br>
-			<a href="tablet.html"><img src="tablet.jpg">Tablet</a><br>
-			<a href="speaker.html"><img src="speaker1.jpg">Speaker</a><br>
-			<a href="mouse1.html"><img src="mouse1.jpg">Mouse1</a><br>
-			<a href="smartwatch.html"><img src="smartwatch.jfif">Smartwatch1</a><br>
-			<a href="smarthwatch2.html"><img src="smartwatch2.jpg">Smartwatch2</a><br>
+		var navitop = document.getElementById("navitop");
+		var sticky = navitop.offsetTop;
 
+		function myFunction() {
+  			if (window.pageYOffset >= sticky) {
+    		navitop.classList.add("sticky")
+  		} else {
+    		navitop.classList.remove("sticky");
+  		}
+		}
+</script>
 	</article>
 	<footer>
 		<P>© Mistore, 2019</P>
