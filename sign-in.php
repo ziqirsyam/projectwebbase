@@ -13,12 +13,25 @@
 	   	<input type="text"placeholder="username" name="username"/><br>
 	   	<p>Password</p>
 	   	<input type="password" placeholder="password" name="password"/><br>
-	    <button type="submit" class="button" name="submit" value="singinbtn">Log in</button>
+	    <button type="submit" class="button" name="submit" value="singinbtn" onclick="check(this.form)">Log in</button>
 	    <p class="message">Want to Register?<a href="signup.html">Sign Up</a></p>
 
 	    </form>
 	</div>
-	</div>
+	
+	<script language="javascript">
+		function check(form)
+		{
+ 			if(form.username.value == "myusername" && form.password.value == "mypassword")
+  			{
+    		window.open('index.php')
+ 			}
+ 			else
+ 			{
+   			alert("The username and password you entered don't match.")
+  			}
+		}
+	</script>
 
 	<?php include 'footer.php'?>
 </body>
