@@ -37,6 +37,12 @@
 		<input class="gender" type="radio"name="genders" value="Male"required> Male
 		<input class="gender"type="radio"name="genders"value="Female"required> Female<br>
 		<br>
+		<label for="address"><b></b></label>
+		<input type="text"placeholder="address"name="address" cols="40"rows="2"/>
+		<br>
+		<label for="postcode"><b>Post Code</b></label>
+		<input type="text"placeholder="Post Code"name="postcode"/>
+		<br>							     
 		<label for="state"><b>State: </b></label>
 		<select name="state">
 		<option value="1">(Please select a State)</option>
