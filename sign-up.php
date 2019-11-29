@@ -1,84 +1,103 @@
 <!DOCTYPE html>
-<html lang="eng>
+<html lang="eng">
+
 <head>
 	<meta charset="utf-8">  
 	<title>Sign-Up</title>
+	<script type="text/javascript" src="signupform.js"></script>
 </head>
+
 <body>
 	<?php include 'generalnavbar.php'?>
-	
+
 	<div class="form">
-  
-	<h1> Sign Up</h1>
-	<p>Please fill in this form</p><br>
-		<form action="">		
-		<label for="fname"><b>First name</b></label>
-		<input type="text"placeholder="First Name"name="fname"/>
-		<br>
-		<label for="lname"><b>Last name</b></label>
-		<input type="text"placeholder="Last Name"name="lname"/>
-		<br>
-		<label for="username"><b>Username</b></label>
-		<input type="text"placehlder="username"name="uname"/>
-		<br>
-		<label for="Nophone"><b>No.Phone</b></label>
-		<input type="text"placehlder="nophone"name="nophone"/>
-		<br>
-		<label for="email"><b>Email</b></label>
-		<input type="text"placeholder="email id"name="email"required />
-		<br>
-		<label for="psw"><b>Password</b></label>
-		<input type="password"placeholder="password"name="psw" required />
-		<br>
-		<label for="conpsw"><b>Confirm Password</b></label>
-		<input type="password"placeholder="Confirm password"name="conpsw"required/>
-		<br>
-		<label for="Gender"><b>Gender:</b></label>
-		<input class="gender" type="radio"name="genders" value="Male"required> Male
-		<input class="gender"type="radio"name="genders"value="Female"required> Female<br>
-		<br>
-		<label for="state"><b>State: </b></label>
-		<select name="state">
-		<option value="1">(Please select a State)</option>
-		<option value="KUALA LUMPUR">Kuala Lumpur</option>
-		<option value="LABUAN">Labuan</option>
-		<option value="PUTRAJAYA">Putrajaya</option>
-		<option value="JOHOR">Johor</option>
-		<option value="KEDAH">Kedah</option>
-		<option value="KELANTAN">Kelantan</option>
-		<option value="MELAKA">Melaka</option>
-		<option value="N.SEMBILAN">N.Sembilan</option>
-		<option value="PAHANG">Pahang</option>
-		<option value="PERAK">Perak</option>
-		<option value="PELIS">Perlis</option>
-		<option value="P.PINANG">P.Pinang</option>
-		<option value="SABAH">Sabah</option>
-		<option value="SARAWAK">Sarawak</option>
-		<option value="SELANGOR">Selangor</option>
-		<option value="TERANGGANU">Terengganu</option>
-		</select>
-		<br><br>
-		<p>
-        <textarea name="terms" cols="40" rows="2"
-        readonly="readonly">TERMS AND CONDITIONS...</textarea>
-        </p>
-		<label><input type="checkbox"checked name="accept">I ACCEPT THE ABOVE TERM AND CONDITIONS</label>
 
-		<div class="clearfix">
-			<button type="reset" name="resetbtn" class="button"value="reset the form">Clear</button>
-			<button type="submit"name="submit"class="button"value="submited">Register<a href="userpage.html"></button></a>
+		<h1> Sign Up</h1>
+		<p>Please fill in this form</p><br>
 
-		<p class="message">Already Registered? <a href="index.html">Homepage</a></p>
+		<form action="" name="myform" id="myform" onreset="myAlertFunction()" onsubmit="return(validate());" >
+			<fieldset>
+				
+				<table cellspacing="2" cellpadding="10">
+					<tr>
+						<td colspan="2">Personal Information</td>
+					</tr>
 
-	    </div>
-	    </form>
+					<tr>
+						<td align="right" label for="Fname">First Name</label></td>
+    					<td><input type="text" name="FName" id="FName"pattern="^[a-zA-Z]+$" title="Only accept alphabet (either in uppercase, lowercase or mix)" onfocus="myFunction(this)" /></td>
+					</tr>
+			
+					<tr>
+						<td align="right" label for="Lname">Last Name</label></td>
+    					<td><input type="text" name="LName" id="LName" pattern="^[a-zA-Z]+$" title="Only accept alphabet (either in uppercase, lowercase or mix)" onfocus="myFunction(this)"  /></td>
+					</tr>
 
-	   </div>
-   </div>
+					<tr>
+						<td align="right" label for="Email">Email</label></td>
+						<td><input type="email" id="Email" name="Emailaddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Must be in proper email format (example: superclap09@suju.sm)" onfocus="myFunction(this)" /></td>
+					</tr>
 
-<?php include 'footer.php'?>
+					<tr>
+						<td align="right" label for="password">Password:</label></td>
+  						<td><input type=password id="password" name="pass" pattern="^(?=.*[a-z])(?=.*[0-9])(?=.*[^\w\*])[^\s]{6,}$" title="Must contain at least 6 digits, one number, one uppercase and lowercase letter and no space allowed" onfocus="myFunction(this)" required /></td>
+					</tr>
+
+					<tr>
+						<td align="right" label for="ConfirmPassword">Confirm password</td>
+						<td><input type="password" name="confirmpassword" id="ConfirmPassword" title="Must be the same password as above" onfocus="myFunction(this)"/></td>
+					</tr>
+				
+					<tr>
+						<td align="right">Gender</td>
+						<td><input name="gender" type="radio" id="gender" value="male" required />
+     						<label for="gm">Male</label>
+     						<input name="gender" type="radio" id="gender" value="female" required />
+     						<label for="gf">Female</label></td>
+					</tr>
+
+					<tr>
+						<td align="right">State</td>
+						<td>
+							<select name="State" id="state" onchange="selectedState()">
+								<option value="-1" selected>[choose yours]</option>
+								<option value="JOHOR">JOHOR</option>
+								<option value="KEDAH">KEDAH</option>
+								<option value="KELANTAN">KELANTAN</option>
+								<option value="MALACCA">MALACCA</option>
+								<option value="NEGERI SEMBILAN">NEGERI SEMBILAN</option>
+								<option value="PAHANG">PAHANG</option>
+								<option value="PERAK">PERAK</option>
+								<option value="PERLIS">PERLIS</option>
+								<option value="PENANG">PENANG</option>
+								<option value="SABAH">SABAH</option>
+								<option value="SARAWAK">SARAWAK</option>
+								<option value="SELANGOR">SELANGOR</option>
+								<option value="TERENGGANU">TERENGGANU</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<br/>
+			<textarea name="terms" cols="53" rows="4" readonly="readonly">TERMS AND CONDITIONS...</textarea><br/><br/>
+
+			<input type="checkbox" name="Terms" value="acceptance" required /><mark>I accept the above Terms and Conditions</mark><br/><br/>
+
+			<div class="clearfix">
+				
+				<button type="reset" name="resetbtn" class="button"value="reset the form">Clear</button>
+				<p class="message">Already Registered? <a href="index.html">Homepage</a></p>
+		    </div>
+		</form>
+	</div>
+
+	<?php include 'footer.php'?>
+
 </body>
+
 </html>
+
 <!--
 	References
 	https://www.w3schools.com/howto/howto_css_signup_form.asp
