@@ -14,6 +14,20 @@ function validate()
 		document.myform.LName.focus() ;
 		return false;
 	}
+	
+	if( document.myform.uname.value == "" )
+	{
+		alert( "Please provide your Username!" );
+		document.myform.uname.focus() ;
+		return false;
+	}
+
+	if( document.myform.nophone.value == "" )
+	{
+		alert( "Please provide your No.Phone!" );
+		document.myform.nophone.focus() ;
+		return false;
+	}
 
 	if( document.myform.Emailaddress.value == "" )
 	{
@@ -23,11 +37,27 @@ function validate()
 	}
 
 	var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("ConfirmPassword").value;
-    if (password != confirmPassword) {
+    	var confirmPassword = document.getElementById("ConfirmPassword").value;
+    	if (password != confirmPassword) {
         alert("Passwords does not match.");
         return false;
-    }
+    	}
+	
+	
+    	if( document.myform.address.value == "" )
+	{
+		alert( "Please provide your Address!" );
+		document.myform.address.focus() ;
+		return false;
+	}
+
+	if( document.myform.postcode.value == "" )
+	{
+		alert( "Please provide your Postcode!" );
+		document.myform.postcode.focus() ;
+		return false;
+	}
+
 
 	if( document.myform.State.value == "-1" )
 	{
