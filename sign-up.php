@@ -1,9 +1,41 @@
 <!DOCTYPE html>
-<html lang="eng>
-<head>
+<html lang="eng">
+<header>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<meta charset="utf-8">  
 	<title>Sign-Up</title>
-</head>
+	<link rel="stylesheet" type="text/css" href="sign-Up.css">
+
+</header>
+	<section>
+		<nav>
+	<ul id="navitop" class ="navitop">
+		<div class="flex-container">
+			
+		    <li class="dropdown">
+		    <i  id="bars" class="fas fa-bars"></i>
+		    <div class="dropdown-content">
+			<a class="sign-up" href="#">Sign Up</a>
+     		<a class="log-in" href="#">Log in</a>
+		</div></li>
+		<li class="list"><a href="#Mistore">Mi Store</a></li>
+  			<li class="list"><a href="#news">Apple</a></li>
+  			<li class="list"><a href="#contact">Samsung</a></li>
+  			<li class="list"><a href="#about">Sony</a></li>
+  			<li class="list"><a href="#about">Xiaomi</a></li>
+  			<li class="list"><a href="#about">Oppo</a></li>
+  			<div class="cart">
+  			<li class="list"><a href="#about"><i class="fas fa-shopping-cart"></i></a></li>
+  		</div>
+  		<form  class="search" action="/action_page.php">
+  			<li class="Search"><a href="#about"><input type="text" name="search" placeholder="Search.."></a></li>
+  		</form>
+
+  				
+  	</div>
+	</ul>
+		</nav>
+		</section>
 <body>
 	<?php include 'generalnavbar.php'?>
 	
@@ -11,39 +43,40 @@
   
 	<h1> Sign Up</h1>
 	<p>Please fill in this form</p><br>
-		<form action="">		
-		<label for="fname"><b>First name</b></label>
-		<input type="text"placeholder="First Name"name="fname"/>
+		<form action="">
+		<div class="user_i">		
+		<label for="fname"></label>
+		<input type="text" placeholder="First Name" name="fname"/>
 		<br>
-		<label for="lname"><b>Last name</b></label>
-		<input type="text"placeholder="Last Name"name="lname"/>
+		<label for="lname"></label>
+		<input type="text" placeholder="Last Name" name="lname"/>
 		<br>
-		<label for="username"><b>Username</b></label>
-		<input type="text"placehlder="username"name="uname"/>
+		<label for="username"></label>
+		<input type="text" placeholder="username" name="uname"/>
 		<br>
-		<label for="Nophone"><b>No.Phone</b></label>
-		<input type="text"placehlder="nophone"name="nophone"/>
+		<label for="Nophone"></label>
+		<input type="text" placeholder="phone number" name="nophone"/>
 		<br>
-		<label for="email"><b>Email</b></label>
-		<input type="text"placeholder="email id"name="email"required />
+		<label for="email"></label>
+		<input type="text" placeholder="email id" name="email"required />
 		<br>
-		<label for="psw"><b>Password</b></label>
-		<input type="password"placeholder="password"name="psw" required />
+		<label for="psw"></label>
+		<input type="password" placeholder="Password" name="psw" required />
 		<br>
-		<label for="conpsw"><b>Confirm Password</b></label>
-		<input type="password"placeholder="Confirm password"name="conpsw"required/>
+		<label for="conpsw"></label>
+		<input type="password" placeholder="Confirm password" name="conpsw"required/>
 		<br>
+		</div>
+		<div class="user_s" >
 		<label for="Gender"><b>Gender:</b></label>
 		<input class="gender" type="radio"name="genders" value="Male"required> Male
-		<input class="gender"type="radio"name="genders"value="Female"required> Female<br>
+		<span class="checkmark"></span>
+		<input class="gender"type="radio"name="genders"value="Female"required> Female
+		<span class="checkmark"></span>
 		<br>
-		<label for="address"><b></b></label>
-		<input type="text"placeholder="address"name="address" cols="40"rows="2"/>
 		<br>
-		<label for="postcode"><b>Post Code</b></label>
-		<input type="text"placeholder="Post Code"name="postcode"/>
-		<br>							     
 		<label for="state"><b>State: </b></label>
+		<div class="custom_select">
 		<select name="state">
 		<option value="1">(Please select a State)</option>
 		<option value="KUALA LUMPUR">Kuala Lumpur</option>
@@ -63,24 +96,42 @@
 		<option value="SELANGOR">Selangor</option>
 		<option value="TERANGGANU">Terengganu</option>
 		</select>
-		<br><br>
+		</div>
+		
+		</div>
 		<p>
         <textarea name="terms" cols="40" rows="2"
         readonly="readonly">TERMS AND CONDITIONS...</textarea>
         </p>
+        <div class="user_a">
 		<label><input type="checkbox"checked name="accept">I ACCEPT THE ABOVE TERM AND CONDITIONS</label>
-
+		</div>
 		<div class="clearfix">
-			<button type="reset" name="resetbtn" class="button"value="reset the form">Clear</button>
-			<button type="submit"name="submit"class="button"value="submited">Register<a href="userpage.html"></button></a>
-
-		<p class="message">Already Registered? <a href="index.html">Homepage</a></p>
+			<button class="clear" type="reset" name="resetbtn" class="button"value="reset the form">Clear</button>
+			<button class="reg" type="submit"name="submit"class="button"value="submited">Register<a href="userpage.html"></button></a>
 
 	    </div>
+	    		<p class="message">Already Registered? <a href="index.html">Homepage</a></p>
 	    </form>
 
 	   </div>
    </div>
+   	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navitop = document.getElementById("navitop");
+		var sticky = navitop.offsetTop;
+
+		function myFunction() {
+  			if (window.pageYOffset >= sticky) {
+    		navitop.classList.add("sticky")
+  		} else {
+    		navitop.classList.remove("sticky");
+  		}
+		}
+
+
+</script>
 
 <?php include 'footer.php'?>
 </body>
