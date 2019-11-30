@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Homepage</title>
-</head>
-<body>
-	<?php include 'usernavbar.php'?>
-	<h1>Hompage User</h1>
-	<?php include '../footer.php'?>
+<header><!--top navigation-->
+		<title>HomePage</title>
+		<link rel="stylesheet" type="text/css" href="indexdeis.css">
+	</header>
+	<nav>
+	<!--side navigation-->
+	<section>
+		<nav>
+	<ul id="navitop" class ="navitop">
+		<div class="flex-container">
+			
+		    <li class="dropdown">
+		     <a class="dropbtn">Dropdown</a>
+		    <div class="dropdown-content">
+		    <a href="userdetails.php">User Details</a>
+			<a href="#">Sell Item</a>
+			<a href="#">Sign Out</a>
 
+		</div></li> 
+		<li class="list"><a href="#Mistore">Mi Store</a></li>
+  			<li class="list"><a href="#news">Apple</a></li>
+  			<li class="list"><a href="#contact">Samsung</a></li>
+  			<li class="list"><a href="#about">Sony</a></li>
+  			<li class="list"><a href="#about">Xiaomi</a></li>
+  			<li class="list"><a href="#about">Oppo</a></li>
+  			<li class="list"><a href="#about">Cart</a></li>
+  		<form action="/action_page.php">
+  			<li class="Search"><a href="#about"><input type="text" name="search" placeholder="Search.."></a></li>
+  		</form>
+  				
+  	</div>
+	</ul>
+		</nav>
+	</section>
 	<article>
-		<div class="search_container">
-			<form action="/action_page.php">
-				<input type="text"placeholder="Search.."name="search">
-				<button type="submit"><i class="fa fa-search"></i></button>
-			</form>
-		</div>
-
-		<div class="contentpage">
-			<a href="smartphone1.html"><img src="smartphone1.jpg">Smartphone1</a><br>
-			<a href="smartphone2.html"><img src="smartphone2.jpg">Smartphone2</a><br>
-			<a href="laptop1.html"><img src="laptop1.jpg">Laptop1</a><br>
-			<a href="laptop2.html"><img src="laptop2.jpg">Laptop2</a><br>
-			<a href="laptop3.html"><img src="laptop3.jpg">Laptop3</a><br>
-			<a href="tablet.html"><img src="tablet.jpg">Tablet</a><br>
-			<a href="speaker.html"><img src="speaker1.jpg">Speaker</a><br>
-			<a href="mouse1.html"><img src="mouse1.jpg">Mouse1</a><br>
-			<a href="smartwatch.html"><img src="smartwatch.jfif">Smartwatch1</a><br>
-			<a href="smarthwatch2.html"><img src="smartwatch2.jpg">Smartwatch2</a><br>
-
+	<div class="flex-container">
+			<div class="board"><a href="Apple.html"><img src="">Learn more</a><br></div>
+			<div class="Samsung"><a href="Samsung.html"><img src="">Learn more</a><br></div>
+			<div class="Sony"><a href="Sony.html"><img src="">Learn more</a><br></div>
+			<div class="Xiaomi"><a  href="Xiaomi.html"><img src="">Learn more</a><br></div>
+			<div class="Oppo"><a href="Oppo.html"><img src="">Learn more</a><br></div>
+	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+		var navitop = document.getElementById("navitop");
+		var sticky = navitop.offsetTop;
+		function myFunction() {
+  			if (window.pageYOffset >= sticky) {
+    		navitop.classList.add("sticky")
+  		} else {
+    		navitop.classList.remove("sticky");
+  		}
+		}
+</script>
 	</article>
-	<?php include '../footer.php'?>
-	
+	<footer>
+		<P>© Mistore, 2019</P>
+	</footer>
 </body>
 </html>
-<!--
-	References
-	https://shopee.com.my/
-	https://www.lazada.com.my/
-	https://www.ebay.com.my/
-	https://www.alibaba.com/
--->
