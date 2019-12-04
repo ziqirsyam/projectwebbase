@@ -2,7 +2,10 @@
 <html>
 <head>
 	<title>Sony</title>
-	<article>
+</body>
+</head>
+<body>
+<article>
 	<div class="flex-container">
 			<div class="xperiap"><a href="xperiap.php"><img src="">Sony Xperia P</a><br></div>
 			<div class="xperiax"><a href="xperiax.php"><img src="">Sony Xperia X </a><br></div>
@@ -10,8 +13,5 @@
 	</div>
 </article>
 </body>
-</head>
-<body>
-
 </body>
 </html>
