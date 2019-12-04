@@ -2,7 +2,10 @@
 <html>
 <head>
 	<title>Samsung</title>
-	<article>
+	
+</head>
+<body>
+<article>
 	<div class="flex-container">
 			<div class="samsungs9"><a href="samsungs9.php"><img src="">Samsung Galaxy S9</a><br></div>
 			<div class="samsungnote9"><a href="samsungnote9.php"><img src="">Samsung Galaxy S9</a><br></div>
@@ -11,8 +14,5 @@
 			<div class="samsungnote3"><a href="samsungnote3.php"><img src="">Samsung Galaxy Note 3</a><br></div>
 	</div>
 </article>
-</head>
-<body>
-
 </body>
 </html>
