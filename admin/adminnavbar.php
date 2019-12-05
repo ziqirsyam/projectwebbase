@@ -1,18 +1,14 @@
-<div>
-	<a href="adminhomepage.php">Home</a>
-	<div id="header">
-	<img src="admin_icon.png"alt="adminlogo"id="adminlogo"><br>Admin Picture
-</div>
 
 <div id="sidebar">
-	<ul>
-		<li><a href="additem.php">Add Data</li>
-		<li><a href="deleteitem.php">Delete Data</li>
-		<li><a href="updateitem.php">Update Data</li>
-		<li><a href="summaryitem.php">Summary Data</li>
-		<a href="#"></a><li>Developer Email</li>
-		<li><a href="signinadmin">Log Out</li>
-	</ul>
+  <ul id="nav">
+    <li><a class="dash"href="adminhomepage.html">Dashboard</a></li>
+    <li><a href="additem.php">Add Data</a></li>
+    <li><a href="deleteitem.php">Delete Data</a></li>
+    <li><a href="updateitem.php">Update Data</a></li>
+    <li><a href="summaryitem.php">Summary Data</a></li>
+    <li><a href="daffa.php">Developer Email</a></li>
+    <li><a href="signinadmin">Log Out</a></li>
+  </ul>
 </div>
 	
 <!--
