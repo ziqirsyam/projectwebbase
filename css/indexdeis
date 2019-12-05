@@ -1,0 +1,243 @@
+/*design code for the navigation bar*/
+header{
+  display: inline;
+}
+
+p{
+  line-height: 1px;
+  padding-top: 1px;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.navitop{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  opacity: 85%;
+  font-size: 18px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .flex-container {
+  padding-top: 60px;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Mistore , .dropdown{
+  display: flex;
+  float: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  opacity: 100%;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search  input[type=text]{
+  width: 70px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 38px;  
+  color: white;
+  background-color: #000000;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 0px 0px;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  text-align: center;
+}
+
+.search  input[type=text]:focus {
+  width: 100%;
+  outline: none;
+}
+
+.list a, .dropbtn{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+i{
+  color: white;
+  font-size:23px;
+  padding-top: 0px;
+  padding-right: 13px;
+  padding-left: 0px;
+}
+
+#bars {
+  color: white;
+  font-size:23px;
+  padding-top: 8px;
+  padding-right: 13px;
+  padding-left: 0px;
+}
+
+/*design code for the square box*/
+.board > a:link{
+	text-decoration: none;	
+}
+
+.board > a:hover {
+  text-decoration: underline;
+}
+
+.board > a:active {
+  text-decoration: underline;
+}
+
+
+.Samsung > a:link{
+	text-decoration: none;	
+}
+
+.Samsung > a:hover {
+  text-decoration: underline;
+}
+
+.Samsung > a:active {
+  text-decoration: underline;
+}
+
+.Sony > a:link{
+	text-decoration: none;	
+}
+
+.Sony > a:hover {
+  text-decoration: underline;
+}
+
+.Sony > a:active {
+  text-decoration: underline;
+}
+
+.Xiaomi > a:link{
+	text-decoration: none;	
+}
+
+.Xiaomi > a:hover {
+  text-decoration: underline;
+}
+
+.Xioami > a:active {
+  text-decoration: underline;
+}
+
+.Oppo > a:link{
+	text-decoration: none;	
+}
+
+.Oppo > a:hover {
+  text-decoration: underline;
+}
+
+.Oppo > a:active {
+  text-decoration: underline;
+}
+
+.flex-container > .Samsung{
+  background-image: url("Samsung1.png");	
+  background-color: #222629;
+  width: 661px;
+  height: 500px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+  color: white;
+}
+
+.flex-container > .Sony{
+  background-image: url("Sony 1.png");
+  background-color: #222629;
+  width: 661px;
+  height: 500px;
+  margin: 5px 0px 5px 5px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+}
+
+.flex-container > .Xiaomi{
+  background-image: url("Xiaomi 1.png");
+  background-color: #222629;
+  width: 661px;
+  height: 500px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+}
+
+.flex-container > .Oppo{
+  background-image: url("Oppo 1.png");
+  background-color: #222629;
+  width: 661px;
+  height: 500px;
+  margin: 5px 0px 5px 5px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+}
+
+.flex-container > .board {
+  background-image: url("iPhone 11(1).png");	
+  background-color: #222629;
+  width: 1350px;
+  height: 650px;
+  margin: 10px 0px;
+  text-align: center;
+  line-height: 270px;
+  font-size: 20px;
+
+}
