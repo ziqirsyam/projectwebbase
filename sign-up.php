@@ -43,7 +43,7 @@
   
 	<h1> Sign Up</h1>
 	<p>Please fill in this form</p><br>
-		<form action="">
+		<form method="post" action="actionsignup.php">
 		<div class="user_i">		
 		<label for="firstname"></label>
 		<input type="text" placeholder="First Name" name="firstname"/>

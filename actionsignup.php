@@ -1,6 +1,6 @@
 <?php
 	@session_start();
-	include "database/conndb.php"
+	include "database/conndb.php";
 
 	$firstname = @$_POST['firstname'];
 	$lastname = @$_POST['lastname'];
@@ -18,7 +18,7 @@
 		var_dump($sql);
 		die('Could not enter data: ' . mysql_error());
 	} else {
-		header("location: user/homepage.php")
+		header("location: user/homepage.php");
 	}
 	
 ?>
