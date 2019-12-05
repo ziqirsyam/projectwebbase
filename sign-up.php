@@ -45,23 +45,23 @@
 	<p>Please fill in this form</p><br>
 		<form action="">
 		<div class="user_i">		
-		<label for="fname"></label>
-		<input type="text" placeholder="First Name" name="fname"/>
+		<label for="firstname"></label>
+		<input type="text" placeholder="First Name" name="firstname"/>
 		<br>
-		<label for="lname"></label>
-		<input type="text" placeholder="Last Name" name="lname"/>
+		<label for="lastname"></label>
+		<input type="text" placeholder="Last Name" name="lastname"/>
 		<br>
 		<label for="username"></label>
-		<input type="text" placeholder="username" name="uname"/>
+		<input type="text" placeholder="username" name="username"/>
 		<br>
-		<label for="Nophone"></label>
+		<label for="nophone"></label>
 		<input type="text" placeholder="phone number" name="nophone"/>
 		<br>
 		<label for="email"></label>
 		<input type="text" placeholder="email id" name="email"required />
 		<br>
-		<label for="psw"></label>
-		<input type="password" placeholder="Password" name="psw" required />
+		<label for="password"></label>
+		<input type="password" placeholder="Password" name="password" required />
 		<br>
 		<label for="conpsw"></label>
 		<input type="password" placeholder="Confirm password" name="conpsw"required/>
@@ -78,7 +78,7 @@
 		<label for="state"><b>State: </b></label>
 		<div class="custom_select">
 		<select name="state">
-		<option value="1">(Please select a State)</option>
+		<option value="">(Please select a State)</option>
 		<option value="KUALA LUMPUR">Kuala Lumpur</option>
 		<option value="LABUAN">Labuan</option>
 		<option value="PUTRAJAYA">Putrajaya</option>
