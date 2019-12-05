@@ -1,6 +1,6 @@
 <div>
 	<hr>
-	<p>© blablaprojectname <?php echo date("Y"); ?></p>
+	<P>© Mistore, 2019 <?php echo date("Y"); ?></p>
 </div>
 <!--
 	Reference

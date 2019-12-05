@@ -1,39 +1,6 @@
 <!DOCTYPE html>
 <html>
-<header><!--top navigation-->
-		<title>HomePage</title>
-		<link rel="stylesheet" type="text/css" href="indexdeis.css">
-	</header>
-	<nav>
-	<!--side navigation-->
-	<section>
-		<nav>
-	<ul id="navitop" class ="navitop">
-		<div class="flex-container">
-			
-		    <li class="dropdown">
-		     <a class="dropbtn">Dropdown</a>
-		    <div class="dropdown-content">
-		    <a href="userdetails.php">User Details</a>
-			<a href="#">Sell Item</a>
-			<a href="#">Sign Out</a>
-
-		</div></li> 
-		<li class="list"><a href="#Mistore">Mi Store</a></li>
-  			<li class="list"><a href="#news">Apple</a></li>
-  			<li class="list"><a href="#contact">Samsung</a></li>
-  			<li class="list"><a href="#about">Sony</a></li>
-  			<li class="list"><a href="#about">Xiaomi</a></li>
-  			<li class="list"><a href="#about">Oppo</a></li>
-  			<li class="list"><a href="#about">Cart</a></li>
-  		<form action="/action_page.php">
-  			<li class="Search"><a href="#about"><input type="text" name="search" placeholder="Search.."></a></li>
-  		</form>
-  				
-  	</div>
-	</ul>
-		</nav>
-	</section>
+	<?php include 'usernavbar.php'?>
 	<article>
 	<div class="flex-container">
 			<div class="board"><a href="Apple.html"><img src="">Learn more</a><br></div>

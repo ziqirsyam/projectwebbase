@@ -1,37 +1,33 @@
-<div>
-	<a href="index.php">Home</a>
-	<a href="sign-up.php">Sign-up</a>
-	<a href="sign-in.php">Sign-in</a>	
-</div>
-<div class="navitop">
-		<a href="#home"> Welcome user</a>
-		<div class="cart">
-			<a href="#cart">Cart</a></div>
-		<div class="signin">
-			<a href="signin.html">Sign In</a></div>
-		<div class="signup">
-			<a href="signup.html">Sign Up</a></div>
-	</div>
-
+<header><!--top navigation-->
+		<title>HomePage</title>
+		<link rel="stylesheet" type="text/css" href="indexdeis.css">
+	</header>
+	<nav>
 	<!--side navigation-->
 	<section>
 		<nav>
-			<ul>
-				<li><a href="userdetail.html">User Detail</a></li>
-				<li><div class="dropdown">
-					<button class="dropbtn">Category
-						<i class="fa fa-caret-down"></i>
-					</button>
-					<div class="dropdown_content">
-						<a href="Laptop.html">Computer</a>
-						<a href="Smartphone.html">Smartphone</a>
-						<a href="Tablet.html">Tablet</a>
-						<a href="Smartwatch.html">Smart Watch</a>
-						<a href="Accessories.html">Accessories</a>
-					</div>
-					</div>
-				</li>
-			</ul>
+	<ul id="navitop" class ="navitop">
+		<div class="flex-container">
+			
+		    <li class="dropdown">
+		     <a class="dropbtn">More</a>
+		    <div class="dropdown-content">
+			<a href="sign-up.php">Sign Up</a>
+     		<a href="Sign-in.php">Sign in</a>
+		</div></li> 
+		<li class="list"><a href="#Mistore">Mi Store</a></li>
+  			<li class="list"><a href="apple.php">Apple</a></li>
+  			<li class="list"><a href="samsung.php">Samsung</a></li>
+  			<li class="list"><a href="sony.php">Sony</a></li>
+  			<li class="list"><a href="xiaomo.php">Xiaomi</a></li>
+  			<li class="list"><a href="oppo.php">Oppo</a></li>
+  			<li class="list"><a href="Sign-in.php">Cart</a></li>
+  		<form action="/action_page.php">
+  			<li class="Search"><a href="#about"><input type="text" name="search" placeholder="Search.."></a></li>
+  		</form>
+  				
+  	</div>
+	</ul>
 		</nav>
 	</section>
 <!--
