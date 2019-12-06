@@ -1,0 +1,1170 @@
+/*design code for the navigation bar*/
+header{
+  display: inline;
+}
+
+p{
+  line-height: 1px;
+  padding-top: 1px;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.navitop{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  opacity: 85%;
+  font-size: 18px;
+  font-style: normal;
+  z-index: 3;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .flex-container {
+  padding-top: 60px;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Mistore , .dropdown{
+  display: flex;
+  float: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  opacity: 100%;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search  input[type=text]{
+  width: 70px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 38px;  
+  color: white;
+  background-color: #000000;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 0px 0px;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  text-align: center;
+
+}
+
+.search  input[type=text]:focus {
+  width: 100%;
+  outline: none;
+}
+
+.list a, .dropbtn{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+i{
+  color: white;
+  font-size:23px;
+  padding-top: 0px;
+  padding-right: 13px;
+  padding-left: 0px;
+}
+
+#bars {
+  color: white;
+  font-size:23px;
+  padding-top: 8px;
+  padding-right: 13px;
+  padding-left: 0px;
+}
+
+/*design code for the square box*/
+.board > a:link{
+	text-decoration: none;	
+}
+
+.board > a:hover {
+  text-decoration: underline;
+}
+
+.board > a:active {
+  text-decoration: underline;
+}
+
+
+.Samsung > a:link{
+	text-decoration: none;	
+}
+
+.Samsung > a:hover {
+  text-decoration: underline;
+}
+
+.Samsung > a:active {
+  text-decoration: underline;
+}
+
+.Sony > a:link{
+	text-decoration: none;	
+}
+
+.Sony > a:hover {
+  text-decoration: underline;
+}
+
+.Sony > a:active {
+  text-decoration: underline;
+}
+
+.Xiaomi > a:link{
+	text-decoration: none;	
+}
+
+.Xiaomi > a:hover {
+  text-decoration: underline;
+}
+
+.Xioami > a:active {
+  text-decoration: underline;
+}
+
+.Oppo > a:link{
+	text-decoration: none;	
+}
+
+.Oppo > a:hover {
+  text-decoration: underline;
+}
+
+.Oppo > a:active {
+  text-decoration: underline;
+}
+
+.flex-container > .Samsung{
+  background-image: url("Samsung1.png");	
+  background-color: #222629;
+  width: 661px;
+  height: 500px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+  color: white;
+}
+
+.flex-container > .Sony{
+  background-image: url("Sony 1.png");
+  background-color: #222629;
+  width: 661px;
+  height: 500px;
+  margin: 5px 0px 5px 5px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+}
+
+.flex-container > .Xiaomi{
+  background-image: url("Xiaomi 1.png");
+  background-color: #222629;
+  width: 661px;
+  height: 500px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+}
+
+.flex-container > .Oppo{
+  background-image: url("Oppo 1.png");
+  background-color: #222629;
+  width: 661px;
+  height: 500px;
+  margin: 5px 0px 5px 5px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+}
+
+.flex-container > .board {
+  background-image: url("iPhone 11(1).png");	
+  background-color: #222629;
+  width: 1350px;
+  height: 650px;
+  margin: 10px 0px;
+  text-align: center;
+  line-height: 270px;
+  font-size: 20px;
+
+}
+
+
+/*billing address menu design*/
+
+/*full name*/ 
+ .user_fname{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_fname input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_fname label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_fname label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_fname{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_fname input:focus + .label_fname .content_fname, 
+.user_fname input:valid + .label_fname .content_fname{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_fname input:focus + .label_fname::after,
+.user_fname input:valid +  .label_fname::after{
+transform: translateX(0%);
+}
+
+/*email*/ 
+ .user_email{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_email input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_email label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_email label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_email{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_email input:focus + .label_email .content_email, 
+.user_email input:valid + .label_email .content_email{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_email input:focus + .label_email::after,
+.user_email input:valid +  .label_email::after{
+transform: translateX(0%);
+}
+
+/*address*/
+.user_add{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_add input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_add label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_add label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_add{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_add input:focus + .label_add .content_add, 
+.user_add input:valid + .label_add .content_add{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_add input:focus + .label_add::after,
+.user_add input:valid +  .label_add::after{
+transform: translateX(0%);
+}
+
+
+/*City*/
+.user_city{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_city input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_city label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_city label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_city{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_city input:focus + .label_city .content_city, 
+.user_city input:valid + .label_city .content_city{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_city input:focus + .label_city::after,
+.user_city input:valid +  .label_city::after{
+transform: translateX(0%);
+}
+
+/*State*/
+.user_state{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_state input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_state label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_state label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_state{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_state input:focus + .label_state .content_state, 
+.user_state input:valid + .label_state .content_state{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_state input:focus + .label_state::after,
+.user_state input:valid +  .label_state::after{
+transform: translateX(0%);
+}
+
+
+/*country*/
+.user_count{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_count input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_count label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_count label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_count{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_count input:focus + .label_count .content_count, 
+.user_count input:valid + .label_count .content_count{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_count input:focus + .label_count::after,
+.user_count input:valid +  .label_count::after{
+transform: translateX(0%);
+}
+
+
+/*Postcode*/
+.user_code{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_code input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_code label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_code label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_code{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_code input:focus + .label_code .content_code, 
+.user_code input:valid + .label_code.content_code{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_code input:focus + .label_code::after,
+.user_code input:valid +  .label_code::after{
+transform: translateX(0%);
+}
+
+/*Payment*/
+
+/*name on card*/ 
+ .user_ncard{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_ncard input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_ncard label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_ncard label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_ncard{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_ncard input:focus + .label_ncard .content_ncard, 
+.user_ncard input:valid + .label_ncard .content_ncard{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_ncard input:focus + .label_ncard::after,
+.user_ncard input:valid +  .label_ncard::after{
+transform: translateX(0%);
+}
+
+/*Card number*/ 
+ .user_cardno{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_cardno input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_cardno label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_cardno label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_cardno{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_cardno input:focus + .label_cardno .content_cardno, 
+.user_cardno input:valid + .label_cardno .content_cardno{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_cardno input:focus + .label_cardno::after,
+.user_cardno input:valid +  .label_cardno::after{
+transform: translateX(0%);
+}
+
+/*month*/ 
+ .user_month{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_month input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_month label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_month label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_month{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_month input:focus + .label_month .content_month, 
+.user_month input:valid + .label_month .content_month{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_month input:focus + .label_month::after,
+.user_month input:valid +  .label_month::after{
+transform: translateX(0%);
+}
+
+/*Year*/ 
+ .user_year{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_year input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_year label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_year label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_year{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_year input:focus + .label_year .content_year, 
+.user_year input:valid + .label_year .content_year{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_year input:focus + .label_year::after,
+.user_year input:valid +  .label_year::after{
+transform: translateX(0%);
+}
+
+/*Year*/ 
+ .user_cvv{
+  width: 20%;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+
+.user_cvv input{
+  width: 100%;
+  height: 100%;
+  border:none ;
+  padding-top: 10px;
+  outline: none;
+}
+
+
+.user_cvv label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.user_cvv label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content_cvv{
+  position: absolute;
+  bottom:5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.user_cvv input:focus + .label_cvv .content_cvv, 
+.user_cvv input:valid + .label_cvv .content_cvv{
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.user_cvv input:focus + .label_cvv::after,
+.user_cvv input:valid +  .label_cvv::after{
+transform: translateX(0%);
+}
+
+/*desing for both form*/
+
+h1{
+  padding-left: 296px;
+}
+
+.icon-container{
+  font-size: 40px;
+}
+
+.flex-container2 {
+  display: flex;
+  padding-left: 296px;
+}
+
+.flex-container-form1{
+  padding-right: 50px;
+}
+
+.flex-container-form1 > div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 200px;}
+
+.flex-container-form2 > div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 200px;
+}
+
+.icon-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-left: 28px;
+  width: 200px;
+}
+
+.sub-button{
+  padding-left: 291px;
+}
+
+.btn {
+  border-color: #2e7e98;
+  background-color: #2e7e98;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.container{
+  padding-left: 296px;
+}
+
+.cart{
+  font-size: 20px;
+}
+
+
+/* Cart page design*/
+
+
+.image{
+  float: left;
+  padding-right: 50px;
+  padding-left: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.image img{
+  display: flex;
+  width:200px;
+  height: 200px;
+  background-color: #d3d3d3;
+  box-sizing: border-box;
+  padding-left: 0px;
+}
+
+.description{
+  float: left;
+  display: flex;
+}
+
+.description span{
+  padding-right: 5px;
+  justify-content: center;
+  font-size: 30px;
+  color: black;
+  padding-top: 25px;
+}
+
+.quantity {
+  padding-top: 30px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  color: #d3d3d3;
+
+}
+
+.quantity input{
+  text-align: center;
+  width: 30px;
+  font-size: 16px;
+}
+
+.box2{
+  padding-left: 296px;
+  box-sizing: border-box;
+}
+.box{
+  border-bottom:  #d3d3d3 solid;
+  border-top: #d3d3d3 solid ;
+  display: flex;
+
+  width: 750px;
+  height: 250px;
+  box-sizing: border-box;
+  padding-left: 0px;
+}
+
+.plusbutton , .minusbutton{
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  box-sizing: border-box;
+  padding:2px 3px 2px 3px;
+}
+
+.buttons{
+  border: none;
+  padding-top: 20px;
+  float: right;
+  display: flex;  
+  box-sizing: border-box;
+
+}
+
+#trash{
+  border: none;
+  color: #d3d3d3;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#trash:hover {
+  color: #000;
+}
+
+#heart{
+  border: none;
+  color: #d3d3d3;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#heart:hover {
+  color: red;
+}
+
+
+#plus, #minus{
+  color: black;
+  box-sizing: border-box;
+  justify-content: center;
+  font-size: 20px;
+
+
+}
+
+.total{
+  padding-top: 30px;
+  padding-left: 296px;
+}
+
+.totalprice{
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  display: flex;
+}
+
+.displayprice{
+  font-size: 30px;
+  display: flex;
+  padding-top: 0px;
+  padding-left: 10px;
+}
+
+.checkoutbtn {
+  border-color: #2e7e98;
+  background-color: #2e7e98;
+  border: none;
+  color: white;
+  padding: 20px 20px 0px 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 170px;
+  height: 20px;
+}
+
+.checkoutbtn:hover {
+  opacity: 1;
+}
