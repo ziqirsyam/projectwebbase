@@ -19,7 +19,7 @@
 ?>
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="userdeis.css">
+<link rel="stylesheet" type="text/css" href="../css/userdeis.css">
 	<?php include 'usernavbar.php'?>
 	<p>Welcome <?php echo @$data['firstname']; ?>&nbsp;<?php echo @$data['lastname'];?> </p>
 	<article>

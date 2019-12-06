@@ -2,7 +2,7 @@
 <html>
 <head>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-   <link rel="stylesheet" type="text/css" href="userdeis.css">
+   <link rel="stylesheet" type="text/css" href="../css/userdeis.css">
    <script src="https://use.fontawesome.com/8997ffd65f.js"></script>
 
       <section>
@@ -13,17 +13,17 @@
         <li class="dropdown">
         <i  id="bars" class="fas fa-bars"></i>
         <div class="dropdown-content">
-      <a class="sign-up" href="#">User detail</a>
-        <a class="log-in" href="#">Sign out</a>
+      <a class="sign-up" href="userdetails.php">User detail</a>
+        <a class="log-in" href="../sign-out.php">Sign out</a>
     </div></li>
-    <li class="list"><a href="#Mistore">Mi Store</a></li>
-        <li class="list"><a href="#news">Apple</a></li>
-        <li class="list"><a href="#contact">Samsung</a></li>
-        <li class="list"><a href="#about">Sony</a></li>
-        <li class="list"><a href="#about">Xiaomi</a></li>
-        <li class="list"><a href="#about">Oppo</a></li>
+    <li class="list"><a href="homepage.php">Mi Store</a></li>
+        <li class="list"><a href="apple.php">Apple</a></li>
+        <li class="list"><a href="samsung.php">Samsung</a></li>
+        <li class="list"><a href="sony.php">Sony</a></li>
+        <li class="list"><a href="xiaomi.php">Xiaomi</a></li>
+        <li class="list"><a href="oppo.php">Oppo</a></li>
         <div class="cart">
-        <li class="list"><a href="#about"><i class="fas fa-shopping-cart"></i></a></li>
+        <li class="list"><a href="cart.php"><i class="fas fa-shopping-cart"></i></a></li>
       </div>
       <form  class="search" action="/action_page.php">
         <li class="Search"><a href="#about"><input type="text" name="search" placeholder="Search.."></a></li>
@@ -52,7 +52,7 @@
 	<title>Checkout</title>
 </head>
 <body>
-	 <?php include 'usernavbar.php'?>
+	 
 	 <h1>Checkout</h1>
   <div class="flex-container2">
       <form class="flex-container-form1" action="/action_page.php" >

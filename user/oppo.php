@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Oppo</title>
-	<link rel="stylesheet" type="text/css" href="branddeis.css">
+	<link rel="stylesheet" type="text/css" href="../css/branddeis.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>

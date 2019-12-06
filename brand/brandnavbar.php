@@ -19,7 +19,7 @@
   			<li class="list"><a href="apple.php">Apple</a></li>
   			<li class="list"><a href="samsung.php">Samsung</a></li>
   			<li class="list"><a href="sony.php">Sony</a></li>
-  			<li class="list"><a href="xiaomo.php">Xiaomi</a></li>
+  			<li class="list"><a href="xiaomi.php">Xiaomi</a></li>
   			<li class="list"><a href="oppo.php">Oppo</a></li>
   			<li class="list"><a href="../Sign-in.php">Cart</a></li>
   		<form action="/action_page.php">
