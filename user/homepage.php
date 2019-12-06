@@ -1,4 +1,4 @@
-<?
+<?php
 	@session_start();
 	include "../database/conndb.php";
 
@@ -16,21 +16,20 @@
 			$result = mysql_num_rows($sql);
 
 			@$_SESSION['user'] = $userid;
-		}
-	}
 ?>
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="userdeis.css">
 	<?php include 'usernavbar.php'?>
+	<p>Welcome <?php echo @$data['firstname']; ?>&nbsp;<?php echo @$data['lastname'];?> </p>
 	<article>
 	<div class="link">
 	<div class="flex-container">
-			<div class="board"><a href="Apple.html"><img src="">Learn more</a> <br></div>
-			<div class="Samsung"><a href="Samsung.html"><img src="">Learn more</a><br></div>
-			<div class="Sony"><a href="Sony.html"><img src="">Learn more</a><br></div>
-			<div class="Xiaomi"><a  href="Xiaomi.html"><img src="">Learn more</a><br></div>
-			<div class="Oppo"><a href="Oppo.html"><img src="">Learn more</a><br></div>
+			<div class="board"><a href="brand/apple.html"><img src="">Learn more</a> <br></div>
+			<div class="Samsung"><a href="brand/samsung.html"><img src="">Learn more</a><br></div>
+			<div class="Sony"><a href="brand/sony.html"><img src="">Learn more</a><br></div>
+			<div class="Xiaomi"><a  href="brand/xiaomi.html"><img src="">Learn more</a><br></div>
+			<div class="Oppo"><a href="brand/oppo.html"><img src="">Learn more</a><br></div>
 		</div>
 	</div>
 	<script>
@@ -44,11 +43,23 @@
     		navitop.classList.remove("sticky");
   		}
 		}
-</script>
+	</script>
 	</article>
 	<footer>
 		<P>© Mistore, 2019</P>
 	</footer>
 </body>
 </html>
-
+<?php
+		}
+		elseif ($usertype === "admin") {
+			?><script type="text/javascript">location.replace("../admin/homepageadmin.php");</script><?php
+		}
+		else{
+			?><script type="text/javascript">location.replace("../index.php");</script><?php
+		}
+	}
+	else{
+		?><script type="text/javascript">location.replace("../index.php");</script><?php
+	}
+?>

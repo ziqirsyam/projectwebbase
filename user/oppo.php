@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Samsung</title>
+	<title>Oppo</title>
 	<link rel="stylesheet" type="text/css" href="branddeis.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-	
+		
 	<!--side navigation
 	<nav>
 	<section>
@@ -37,14 +37,11 @@
 	</ul>
 		</nav>-->
 		<?php include 'usernavbar.php'?>
-<article>
-	<p class="brand">Samsung Product</p>
+	<article>
+		<p class="brand">Oppo Product</p>
 	<div class="flex-container2">
-			<div class="samsungs9"><p>Samsung Galaxy S9</p><a href="samsungs9.php"><img src="">Buy</a><br></div>
-			<div class="samsungnote9"><p>Samsung Galaxy Note 9</p><a href="samsungnote9.php"><img src="">Buy</a><br></div>
-			<div class="samsungs10"><p>Samsung Galaxy S10+</p><a href="samsungs10+.php"><img src="">Buy</a><br></div>
-			<div class="samsungs8"><p>Samsung Galaxy S8</p><a  href="samsungs8.php"><img src="">Buy</a><br></div>
-			<div class="samsungnote3"><p>Samsung Galaxy Note 3</p><a href="samsungnote3.php"><img src="">Buy</a><br></div>
+			<div class="oppof1s"><p>Oppo F1S</p><a href="oppof1s.php"><img src="">Buy</a><br></div>
+			<div class="oppoa37"><p>Oppo A37</p><a href="oppoa37.php"><img src="">Buy</a><br></div>
 	</div>
 </article>
 </body>

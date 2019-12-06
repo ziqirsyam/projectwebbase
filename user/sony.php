@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Samsung</title>
+	<title>Sony</title>
 	<link rel="stylesheet" type="text/css" href="branddeis.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-	
+		
 	<!--side navigation
 	<nav>
 	<section>
@@ -38,14 +38,13 @@
 		</nav>-->
 		<?php include 'usernavbar.php'?>
 <article>
-	<p class="brand">Samsung Product</p>
+	<p class="brand">Sony Product</p>
 	<div class="flex-container2">
-			<div class="samsungs9"><p>Samsung Galaxy S9</p><a href="samsungs9.php"><img src="">Buy</a><br></div>
-			<div class="samsungnote9"><p>Samsung Galaxy Note 9</p><a href="samsungnote9.php"><img src="">Buy</a><br></div>
-			<div class="samsungs10"><p>Samsung Galaxy S10+</p><a href="samsungs10+.php"><img src="">Buy</a><br></div>
-			<div class="samsungs8"><p>Samsung Galaxy S8</p><a  href="samsungs8.php"><img src="">Buy</a><br></div>
-			<div class="samsungnote3"><p>Samsung Galaxy Note 3</p><a href="samsungnote3.php"><img src="">Buy</a><br></div>
+			<div class="xperiap"><p>Sony Xperia P</p><a href="xperiap.php"><img src="">Buy</a><br></div>
+			<div class="xperiax"><p>Sony Xperis X</p><a href="xperiax.php"><img src="">Buy</a><br></div>
+			<div class="xperiaxz"><p>Sony Xperis XZ Premium</p><a href="xperiaxz.php"><img src="">Buy</a><br></div>
 	</div>
 </article>
+</body>
 </body>
 </html>
