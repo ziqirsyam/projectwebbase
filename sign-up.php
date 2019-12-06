@@ -4,10 +4,10 @@
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<meta charset="utf-8">  
 	<title>Sign-Up</title>
-	<link rel="stylesheet" type="text/css" href="sign-Up.css">
+	<link rel="stylesheet" type="text/css" href="css/sign-Up.css">
 
 </header>
-	<section>
+	<!--<section>
 		<nav>
 	<ul id="navitop" class ="navitop">
 		<div class="flex-container">
@@ -35,7 +35,7 @@
   	</div>
 	</ul>
 		</nav>
-		</section>
+		</section>-->
 <body>
 	<?php include 'generalnavbar.php'?>
 	

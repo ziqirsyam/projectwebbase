@@ -15,12 +15,12 @@
 			<a href="sign-up.php">Sign Up</a>
      		<a href="Sign-in.php">Sign in</a>
 		</div></li> 
-		<li class="list"><a href="#Mistore">Mi Store</a></li>
-  			<li class="list"><a href="apple.php">Apple</a></li>
-  			<li class="list"><a href="samsung.php">Samsung</a></li>
-  			<li class="list"><a href="sony.php">Sony</a></li>
-  			<li class="list"><a href="xiaomo.php">Xiaomi</a></li>
-  			<li class="list"><a href="oppo.php">Oppo</a></li>
+		<li class="list"><a href="index.php">Mi Store</a></li>
+  			<li class="list"><a href="brand/apple.php">Apple</a></li>
+  			<li class="list"><a href="brand/samsung.php">Samsung</a></li>
+  			<li class="list"><a href="brand/sony.php">Sony</a></li>
+  			<li class="list"><a href="brand/xiaomo.php">Xiaomi</a></li>
+  			<li class="list"><a href="brand/oppo.php">Oppo</a></li>
   			<li class="list"><a href="Sign-in.php">Cart</a></li>
   		<form action="/action_page.php">
   			<li class="Search"><a href="#about"><input type="text" name="search" placeholder="Search.."></a></li>
