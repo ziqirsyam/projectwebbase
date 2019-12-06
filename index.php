@@ -1,6 +1,6 @@
 <?php include 'generalnavbar.php'?>
 	<!--<h1>Index - Page</h1>-->
-	<?php include 'footer.php'?>
+	
 	<header><!--top navigation-->
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<title>HomePage</title>
@@ -64,9 +64,10 @@
 		}
 </script>
 	</article>
-	<footer>
+	<?php include 'footer.php'?>
+	<!--<footer>
 		<P>© Mistore, 2019</P>
-	</footer>
+	</footer>-->
 </body>
 </html>
 <!--    References
