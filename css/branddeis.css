@@ -1,0 +1,532 @@
+/*design code for the navigation bar*/
+header{
+  display: inline;
+}
+
+p{
+  line-height: 1px;
+  padding-top: 1px;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.navitop{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  opacity: 85%;
+  font-size: 18px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .flex-container {
+  padding-top: 60px;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Mistore , .dropdown{
+  display: flex;
+  float: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  opacity: 100%;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search  input[type=text]{
+  width: 70px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 38px;  
+  color: white;
+  background-color: #000000;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 0px 0px;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  text-align: center;
+}
+
+.search  input[type=text]:focus {
+  width: 100%;
+  outline: none;
+}
+
+.list a, .dropbtn{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+i{
+  color: white;
+  font-size:23px;
+  padding-top: 0px;
+  padding-right: 13px;
+  padding-left: 0px;
+}
+
+#bars {
+  color: white;
+  font-size:23px;
+  padding-top: 8px;
+  padding-right: 13px;
+  padding-left: 0px;
+}
+
+/*design code for the square box*/
+
+.brand{
+  padding-left: 296px;
+  display: flex;
+  font-size: 40px;
+  box-sizing: border-box;
+}
+
+.flex-container2{
+  padding-left: 296px;
+  padding-right: 296px;
+  display: flex;
+  float: left;
+  flex-wrap: wrap;
+}
+
+/*Apple Product*/
+.flex-container2 > .iphone11{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+  color: black;
+}
+
+.flex-container2 > .iphone11promax{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+  color: black;
+}
+
+.flex-container2 > .iphone10{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+  color: black;
+}
+
+.flex-container2 > .iphone8plus{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+  color: black;
+}
+
+.flex-container2 > .iphone7plus{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+  color: black;
+}
+
+.iphone11 a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.iphone11promax a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.iphone10 a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.iphone8plus a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.iphone7plus a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.iphone11 > a:link,
+.iphone11promax > a:link,
+.iphone10 > a:link,
+.iphone8plus > a:link,
+.iphone7plus > a:link{
+  text-decoration: none;  
+}
+
+.iphone11 > a:hover,
+.iphone11promax > a:hover,
+.iphone10 > a:hover,
+.iphone8plus > a:hover,
+.iphone7plus > a:hover {
+  text-decoration: underline;
+}
+
+.iphone11 > a:active,
+.iphone11promax > a:active,
+.iphone10 > a:active,
+.iphone8plus > a:active,
+.iphone7plus > a:active{
+  text-decoration: underline;
+}
+
+
+/*Oppo Product*/
+.flex-container2 > .oppof1s{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+  color: black;
+}
+
+.flex-container2 > .oppoa37{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 18px;
+  color: black;
+}
+
+.oppof1s a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.oppoa37 a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.oppof1s > a:link,
+.oppoa37 > a:link{
+  text-decoration: none;  
+}
+
+.oppof1s > a:hover,
+.oppoa37 > a:hover{
+  text-decoration: underline;
+}
+
+.oppof1s > a:active,
+.oppoa37 > a:active{
+  text-decoration: underline;
+}
+
+/*Samsung Product*/
+.flex-container2 > .samsungs9{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 16px;
+  color: black;
+}
+
+.flex-container2 > .samsungnote9{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 16px;
+  color: black;
+}
+
+.flex-container2 > .samsungs10{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 16px;
+  color: black;
+}
+
+.flex-container2 > .samsungs8{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 16px;
+  color: black;
+}
+
+.flex-container2 > .samsungnote3{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 16px;
+  color: black;
+}
+
+.samsungs9 a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.samsungnote9 a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.samsungs10 a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.samsungs8 a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.samsungnote3 a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.samsungs9 > a:link,
+.samsungnote9 > a:link,
+.samsungs10 > a:link,
+.samsungs8 > a:link,
+.samsungnote3 > a:link{
+  text-decoration: none;  
+}
+
+.samsungs9 > a:hover,
+.samsungnote9 > a:hover,
+.samsungs10 > a:hover,
+.samsungs8 > a:hover,
+.samsungnote3 > a:hover {
+  text-decoration: underline;
+}
+
+.samsungs9 > a:active,
+.samsungnote9 > a:active,
+.samsungs10 > a:active,
+.samsungs8 > a:active,
+.samsungnote3 > a:active{
+  text-decoration: underline;
+}
+
+
+/*Sony Product*/
+.flex-container2 > .xperiap{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 16px;
+  color: black;
+}
+
+.flex-container2 > .xperiax{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 16px;
+  color: black;
+}
+
+.flex-container2 > .xperiaxz{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 16px;
+  color: black;
+}
+
+.xperiap a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.xperiax a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.xperiaxz a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.xperiap > a:link,
+.xperiax > a:link,
+.xperiaxz > a:link{
+  text-decoration: none;  
+}
+
+
+.xperiap > a:hover,
+.xperiax > a:hover,
+.xperiaxz > a:hover{
+  text-decoration: underline;
+}
+
+.xperiap > a:active,
+.xperiax > a:active,
+.xperiaxz > a:active{
+  text-decoration: underline;
+}
+
+/*Xiaomi Product*/
+.flex-container2 > .pocophone{
+  background-image: url("");  
+  background-color: #d3d3d3;
+  width: 200px;
+  height: 300px;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  line-height: 170px;
+  font-size: 16px;
+  color: black;
+}
+
+
+.pocophone a{
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.pocophone > a:link{
+  text-decoration: none;  
+}
+
+
+.pocophone > a:hover{
+  text-decoration: underline;
+}
+
+.pocophone > a:active{
+  text-decoration: underline;
+}
