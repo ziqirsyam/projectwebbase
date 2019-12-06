@@ -25,7 +25,7 @@
   			<li class="list"><a href="xiaomi.php">Xiaomi</a></li>
   			<li class="list"><a href="oppo.php">Oppo</a></li>
   		<div class="cart">
-  			<li class="list"><a href="usercart"><i class="fas fa-shopping-cart"></i></a></li>
+  			<li class="list"><a href="cart.php"><i class="fas fa-shopping-cart"></i></a></li>
   		</div>
   		<form action="/action_page.php">
   			<li class="Search"><a href="#about"><input type="text" name="search" placeholder="Search.."></a></li>

@@ -8,7 +8,7 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <section>
+    <!--<section>
     <nav>
   <ul id="navitop" class ="navitop">
     <div class="flex-container">
@@ -36,7 +36,7 @@
     </div>
   </ul>
     </nav>
-  </section>
+  </section>-->
 </head>
 <body>
 	<?php include'usernavbar.php'?>
