@@ -6,10 +6,6 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-body{
-	font-family: roboto;
-
-}
 a {
 	text-decoration: none;
 }
@@ -35,6 +31,7 @@ a {
 	font-weight: 300;
 }
 
+
 #container {
 	width:100%;
 	margin:0 auto;
@@ -42,7 +39,7 @@ a {
 
 #sidebar {
 	width:300px;
-	height:600px;
+	height:800px;
 	background-color: #d3d3d3;
 	float:left;
 }
@@ -122,9 +119,62 @@ footer{
 }
 
 
+/*add item*/
 
+h3{
+	font-size: 25px;
+	padding-left: 1px;
+}
 
+#myform{
+	padding:15px;
+	box-sizing: border-box;
+}
 
+.name, .price, .category, .detail{
+	padding-bottom: 20px;
+}
+
+.proname{
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.proprice{
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.dename{
+	font-size:20px;
+	font-weight: bold;
+}
+
+textarea{
+	padding-bottom: 50px;
+}
+.category{
+	font-weight: bold;
+	font-size: 20px;
+	color: grey;
+	padding-bottom: 5px;
+}
+
+.category label{
+	padding-top: 5px; 
+	display: flex;
+}
+
+label{
+	padding-bottom: 15px;
+}
+
+input{
+	border-radius: 3px;
+	border-color: #d3d3d3;
+}
 
 
 
