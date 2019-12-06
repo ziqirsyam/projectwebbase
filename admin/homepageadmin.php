@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-	<title>Homepage</title>
+	<title>Admin Panel</title>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<link rel="stylesheet"type="text/css"href="adminstyle.css"/>
 </head>
 <body>
-	<?php include 'adminnavbar.php'?>
-
 <div id="header"><br><br>
 	<div class="adminlogo"><a href="#">Admin<span>Dashboard</span></a></div><br><br><br>
 </div>
@@ -55,10 +54,3 @@
 <footer>mi store</footer>
 </body>
 </html>
-	<?php include '../footer.php'?>
-</body>
-</html>
-<!--
-	Reference
-	https://speckyboy.com/beautifully-designed-admin-dashboards/
--->
