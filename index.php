@@ -4,11 +4,11 @@
 	<header><!--top navigation-->
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<title>HomePage</title>
-		<link rel="stylesheet" type="text/css" href="indexdeis.css">
+		<link rel="stylesheet" type="text/css" href="css/indexdeis.css">
 
 
 	</header>
-	<!--side navigation-->
+	<!--side navigation
 	<section>
 		<nav>
 	<ul id="navitop" class ="navitop">
@@ -37,7 +37,7 @@
   	</div>
 	</ul>
 		</nav>
-	</section>
+	</section>-->
 	<body>
 	<article>
 	<div class="link">
