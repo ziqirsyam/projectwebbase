@@ -142,7 +142,7 @@ i{
 
 /*Apple Product*/
 .flex-container2 > .iphone11{
-  background-image: url("");  
+  background-image: url("iphone11.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -154,7 +154,7 @@ i{
 }
 
 .flex-container2 > .iphone11promax{
-  background-image: url("");  
+  background-image: url("iphone11pro.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -166,7 +166,7 @@ i{
 }
 
 .flex-container2 > .iphone10{
-  background-image: url("");  
+  background-image: url("iphone10.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -178,7 +178,7 @@ i{
 }
 
 .flex-container2 > .iphone8plus{
-  background-image: url("");  
+  background-image: url("iphone8+.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -190,7 +190,7 @@ i{
 }
 
 .flex-container2 > .iphone7plus{
-  background-image: url("");  
+  background-image: url("Iphone 7+.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -204,31 +204,31 @@ i{
 .iphone11 a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .iphone11promax a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .iphone10 a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .iphone8plus a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .iphone7plus a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .iphone11 > a:link,
@@ -258,7 +258,7 @@ i{
 
 /*Oppo Product*/
 .flex-container2 > .oppof1s{
-  background-image: url("");  
+  background-image: url("oppof1s.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -270,7 +270,7 @@ i{
 }
 
 .flex-container2 > .oppoa37{
-  background-image: url("");  
+  background-image: url("oppoa37.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -284,13 +284,13 @@ i{
 .oppof1s a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .oppoa37 a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .oppof1s > a:link,
@@ -310,7 +310,7 @@ i{
 
 /*Samsung Product*/
 .flex-container2 > .samsungs9{
-  background-image: url("");  
+  background-image: url("s9.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -322,7 +322,7 @@ i{
 }
 
 .flex-container2 > .samsungnote9{
-  background-image: url("");  
+  background-image: url("note9.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -334,7 +334,7 @@ i{
 }
 
 .flex-container2 > .samsungs10{
-  background-image: url("");  
+  background-image: url("s10+.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -346,7 +346,7 @@ i{
 }
 
 .flex-container2 > .samsungs8{
-  background-image: url("");  
+  background-image: url("s8.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -358,7 +358,7 @@ i{
 }
 
 .flex-container2 > .samsungnote3{
-  background-image: url("");  
+  background-image: url("note3.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -372,31 +372,31 @@ i{
 .samsungs9 a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .samsungnote9 a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .samsungs10 a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .samsungs8 a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .samsungnote3 a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .samsungs9 > a:link,
@@ -426,7 +426,7 @@ i{
 
 /*Sony Product*/
 .flex-container2 > .xperiap{
-  background-image: url("");  
+  background-image: url("xperiap.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -437,8 +437,8 @@ i{
   color: black;
 }
 
-.flex-container2 > .xperiax{
-  background-image: url("");  
+.flex-container2 > .xperiaz{
+  background-image: url("xperiaz.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -450,7 +450,7 @@ i{
 }
 
 .flex-container2 > .xperiaxz{
-  background-image: url("");  
+  background-image: url("Xperiaxz.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -464,43 +464,43 @@ i{
 .xperiap a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
-.xperiax a{
+.xperiaz a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .xperiaxz a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .xperiap > a:link,
-.xperiax > a:link,
+.xperiaz > a:link,
 .xperiaxz > a:link{
   text-decoration: none;  
 }
 
 
 .xperiap > a:hover,
-.xperiax > a:hover,
+.xperiaz > a:hover,
 .xperiaxz > a:hover{
   text-decoration: underline;
 }
 
 .xperiap > a:active,
-.xperiax > a:active,
+.xperiaz > a:active,
 .xperiaxz > a:active{
   text-decoration: underline;
 }
 
 /*Xiaomi Product*/
 .flex-container2 > .pocophone{
-  background-image: url("");  
+  background-image: url("pocophone.png");  
   background-color: #d3d3d3;
   width: 200px;
   height: 300px;
@@ -515,7 +515,7 @@ i{
 .pocophone a{
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 .pocophone > a:link{
