@@ -46,7 +46,7 @@
   
 	<h1> Update Details</h1>
 	<p>Please fill in this form</p><br>
-		<form name="Userdetail" onreset="myAlertFunction()" onsubmit="return(validate)">		
+		<form name="Userdetail" onreset="myAlertFunction()" onsubmit="return(validate());">		
 		<label for="fname"><b>First name</b></label>
 		<input type="text"placeholder="First Name"name="fname"/>
 		<br>
