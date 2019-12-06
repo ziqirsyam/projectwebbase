@@ -2,13 +2,14 @@
 <html>
 <head>
 	<title>Mi Store Update Details</title>
+	<script type="text/javascript" src="userdetails.js"></script>
 </head>
 <body>
 <div class="form">
   
 	<h1> Update Details</h1>
 	<p>Please fill in this form</p><br>
-		<form >		
+		<form name="Userdetail" onreset="myAlertFunction()" onsubmit="return(validate)">		
 		<label for="fname"><b>First name</b></label>
 		<input type="text"placeholder="First Name"name="fname"/>
 		<br>
