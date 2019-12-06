@@ -6,11 +6,10 @@
 <body>
 <header><!--top navigation-->
 		<title>HomePage</title>
-		<link rel="stylesheet" type="text/css" href="branddeis.css">
+		<link rel="stylesheet" type="text/css" href="../css/branddeis.css">
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</header>
-	<nav>
-	<!--side navigation-->
+	<!--<nav>
 	<section>
 		<nav>
 	<ul id="navitop" class ="navitop">
@@ -38,7 +37,8 @@
   	</div>
 	</ul>
 		</nav>
-	</section>
+	</section>-->
+	<?php include 'brandnavbar.php'?>
 	<article>
 			<p class="brand">Apple Product</p>
 	<div class="flex-container2">

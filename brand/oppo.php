@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>Oppo</title>
-	<link rel="stylesheet" type="text/css" href="branddeis.css">
+	<link rel="stylesheet" type="text/css" href="css/branddeis.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-		<nav>
-	<!--side navigation-->
+		<!--<nav>
+	side navigation
 	<section>
 		<nav>
 	<ul id="navitop" class ="navitop">
@@ -34,7 +34,8 @@
   				
   	</div>
 	</ul>
-		</nav>
+		</nav>-->
+		<?php include 'brandnavbar.php'?>
 	<article>
 		<p class="brand">Oppo Product</p>
 	<div class="flex-container2">

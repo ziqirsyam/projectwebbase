@@ -2,15 +2,15 @@
 <html>
 <head>
 	<title>Xiaomi</title>
-	<link rel="stylesheet" type="text/css" href="branddeis.css">
+	<link rel="stylesheet" type="text/css" href="css/branddeis.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<article>
 	</div>
 </article>
 </head>
 <body>
-	<nav>
-	<!--side navigation-->
+	<!--<nav>
+	side navigation
 	<section>
 		<nav>
 	<ul id="navitop" class ="navitop">
@@ -37,7 +37,8 @@
   				
   	</div>
 	</ul>
-		</nav>
+		</nav>-->
+		<?php include 'brandnavbar.php'?>
 <article>
 	<div class="flex-container2">
 			<div class="pocophone"><p>Pocophone</p><a href="pocophone.php"><img src="">Buy</a><br></div>
