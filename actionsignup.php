@@ -10,15 +10,16 @@
 	$password = @$_POST['password'];
 	$gender = @$_POST['gender'];
 	$state = @$_POST['state'];
+	$access = @$_POST['access'];
 
-	$sql = "INSERT INTO user (firstname, lastname, username, nophone, email, password, gender, state) VALUES ('$firstname','$lastname','$username','$nophone','$email','$password','$gender','$state')";
+	$sql = "INSERT INTO user (firstname, lastname, username, nophone, email, password, gender, state, access) VALUES ('$firstname','$lastname','$username','$nophone','$email','$password','$gender','$state', '$access')";
 
 	$query = mysql_query($sql, $connection);
 	if (!$query) {
 		var_dump($sql);
 		die('Could not enter data: ' . mysql_error());
 	} else {
-		header("location: user/homepage.php");
+		header("location: index.php");
 	}
 	
 ?>

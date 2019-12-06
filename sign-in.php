@@ -1,3 +1,40 @@
+<?php
+	@session_start();
+	include "database/conndb.php";
+
+	$username = @$_POST['username'];
+	$password = @$_POST['password'];
+	$login = @$_POST['login'];
+	$invalidlogin = "Wrong username or password. Please try again.";
+
+	if ($login) {
+		if ($username == "" || $password == "") {
+			?> <script type="text/javascript">alert("Field must not empty!");</script> <?php
+		} else {
+			$sql = mysql_query("SELECT * FROM user WHERE username = '$username' AND password = '$password'") OR die(mysql_error());
+			$data = mysql_fetch_array($sql);
+			$result = mysql_num_rows($sql);
+
+			if ($result >=1) {
+				if ($data['access'] === "admin") {
+					@$_SESSION['user'] = $data['username'];
+					?><script type="text/javascript">location.replace("admin/homepageadmin.php")</script><?php
+				} elseif($data['access'] === "user") {
+					@$_SESSION['user'] = $data['username'];
+					?><script type="text/javascript">location.replace("user/homepage.php")</script><?php
+				}
+			} else {
+				echo "<script type='text/javascript'>alert('$invalidlogin')</script>";
+			}
+			
+		}
+		
+	} else {
+
+	}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +43,7 @@
 	<link rel="stylesheet" type="text/css" href="Sign-in.css">
 </head>
 <body>
-	<section>
+	<!--<section>
 		<nav>
 	<ul id="navitop" class ="navitop">
 		<div class="flex-container">
@@ -34,7 +71,7 @@
   	</div>
 	</ul>
 		</nav>
-		</section>
+		</section>-->
 	<?php include 'generalnavbar.php'?>
 	<div class="form" name="userform">
 	   	<form class="login-form" action="" method="post">
@@ -43,13 +80,13 @@
 	   	<div class="user_i">
 	   	<input type="text"placeholder="Username" name="username"/><br>
 	   	<input type="password" placeholder="Password" name="password"/><br>
-	    <button type="submit" class="button" name="submit" value="singinbtn" onclick="check(this.form)">Log in</button>
+	    <button type="submit" class="button" name="login" value="singinbtn" onclick="check(this.form)">Log in</button>
 	    <p class="message">Want to Register? <a href="signup.html">Sign Up</a></p>
 		</div>
 	    </form>
 	</div>
 	
-	<script language="javascript">
+	<!--<script language="javascript">
 		function check(form)
 		{
  			if(form.username.value == "myusername" && form.password.value == "mypassword")
@@ -74,7 +111,7 @@
     		navitop.classList.remove("sticky");
   		}
 		}
-	</script>
+	</script>-->
 
 	<?php include 'footer.php'?>
 </body>

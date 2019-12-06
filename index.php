@@ -17,8 +17,8 @@
 		    <li class="dropdown">
 		    <i  id="bars" class="fas fa-bars"></i>
 		    <div class="dropdown-content">
-			<a class="sign-up" href="#">Sign Up</a>
-     		<a class="log-in" href="#">Log in</a>
+			<a class="sign-up" href="sign-up.php">Sign Up</a>
+     		<a class="log-in" href="sign-in.php">Log in</a>
 		</div></li>
 		<li class="list"><a href="#Mistore">Mi Store</a></li>
   			<li class="list"><a href="#news">Apple</a></li>
