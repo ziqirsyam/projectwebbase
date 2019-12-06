@@ -5,6 +5,8 @@
 	<meta charset="utf-8">  
 	<title>Sign-Up</title>
 	<link rel="stylesheet" type="text/css" href="css/sign-Up.css">
+	<script type="text/javascript" src="signup.js"></script>
+	
 
 </header>
 	<!--<section>
@@ -43,7 +45,7 @@
   
 	<h1> Sign Up</h1>
 	<p>Please fill in this form</p><br>
-		<form method="post" action="actionsignup.php">
+		<form name="Signup" onreset="myAlertFunction()" onsubmit="return(validate());" method="post" action="actionsignup.php">
 
 			<div class="user_i">		
 				<label for="firstname"></label>
