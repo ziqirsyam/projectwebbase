@@ -21,15 +21,17 @@
 ?>
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" type="text/css" href="userdeis.css">
 	<?php include 'usernavbar.php'?>
-	<p>Welcome <?php echo @$data['username'];?></p>
 	<article>
+	<div class="link">
 	<div class="flex-container">
-			<div class="board"><a href="Apple.html"><img src="">Learn more</a><br></div>
+			<div class="board"><a href="Apple.html"><img src="">Learn more</a> <br></div>
 			<div class="Samsung"><a href="Samsung.html"><img src="">Learn more</a><br></div>
 			<div class="Sony"><a href="Sony.html"><img src="">Learn more</a><br></div>
 			<div class="Xiaomi"><a  href="Xiaomi.html"><img src="">Learn more</a><br></div>
 			<div class="Oppo"><a href="Oppo.html"><img src="">Learn more</a><br></div>
+		</div>
 	</div>
 	<script>
 		window.onscroll = function() {myFunction()};
@@ -49,3 +51,4 @@
 	</footer>
 </body>
 </html>
+
