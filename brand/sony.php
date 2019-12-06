@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>Sony</title>
-	<link rel="stylesheet" type="text/css" href="../css/branddeis.css">
+	<link rel="stylesheet" type="text/css" href="branddeis.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-		<!--<nav>
-	side navigation
+		<nav>
+	<!--side navigation-->
 	<section>
 		<nav>
 	<ul id="navitop" class ="navitop">
@@ -34,14 +34,13 @@
   				
   	</div>
 	</ul>
-		</nav>-->
-		<?php include 'brandnavbar.php'?>
+		</nav>
 <article>
 	<p class="brand">Sony Product</p>
 	<div class="flex-container2">
 			<div class="xperiap"><p>Sony Xperia P</p><a href="xperiap.php"><img src="">Buy</a><br></div>
-			<div class="xperiax"><p>Sony Xperis X</p><a href="xperiax.php"><img src="">Buy</a><br></div>
-			<div class="xperiaxz"><p>Sony Xperis XZ Premium</p><a href="xperiaxz.php"><img src="">Buy</a><br></div>
+			<div class="xperiaz"><p>Sony Xperia Z</p><a href="xperiaz.php"><img src="">Buy</a><br></div>
+			<div class="xperiaxz"><p>Sony Xperia XZ Premium</p><a href="xperiaxz.php"><img src="">Buy</a><br></div>
 	</div>
 </article>
 </body>
