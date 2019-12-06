@@ -1,6 +1,28 @@
+<?
+	@session_start();
+	include "../database/conndb.php";
+
+	if (@$_SESSION['user']) {
+		$user = @$_SESSION['user'];
+
+		$sql = mysql_query("SELECT * FROM user WHERE username = '$user'") or die(mysql_error());
+		$data = mysql_fetch_array($sql);
+		$result = mysql_num_rows($sql);
+		$usertype = $data['access'];
+		if ($usertype === "user") {
+			$userid = $user;
+			$sql = mysql_query("SELECT * FROM user WHERE username = '$userid'") or die(mysql_error());
+			$data = mysql_fetch_array($sql);
+			$result = mysql_num_rows($sql);
+
+			@$_SESSION['user'] = $userid;
+		}
+	}
+?>
 <!DOCTYPE html>
 <html>
 	<?php include 'usernavbar.php'?>
+	<p>Welcome <?php echo @$data['username'];?></p>
 	<article>
 	<div class="flex-container">
 			<div class="board"><a href="Apple.html"><img src="">Learn more</a><br></div>
