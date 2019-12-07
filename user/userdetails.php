@@ -1,10 +1,29 @@
+<?php
+	@session_start();
+	include "../database/conndb.php";
+
+	if (@$_SESSION['user']) {
+		$user = @$_SESSION['user'];
+
+		$sql = mysql_query("SELECT * FROM user WHERE username = '$user'") or die(mysql_error());
+		$data = mysql_fetch_array($sql);
+		$result = mysql_num_rows($sql);
+		$usertype = $data['access'];
+		if ($usertype === "user") {
+			$userid = $user;
+			$sql = mysql_query("SELECT * FROM user WHERE username = '$userid'") or die(mysql_error());
+			$data = mysql_fetch_array($sql);
+			$result = mysql_num_rows($sql);
+
+			@$_SESSION['user'] = $userid;
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Mi Store Update Details</title>
 	<script type="userdetails.js"></script>
-	<link rel="stylesheet"type="text/css"href="adminstyle.css"/>
-	<script type="text/javascript" src="userdetails.js"></script>
+	<link rel="stylesheet"type="text/css"href="../css/userdeis.css"/>
+	<script type="text/javascript" src="../js/userdetails.js"></script>
 </head>
 <body>
 	<header><!--top navigation-->
@@ -22,16 +41,16 @@
 		     <a class="dropbtn">More</a>
 		    <div class="dropdown-content">
 		    <a href="userdetails.php">User Details</a>
-			<a href="index.php">Sign Out</a>
+			<a href="../sign-out.php">Sign Out</a>
 
 		</div></li> 
-		<li class="list"><a href="#Mistore">Mi Store</a></li>
-  			<li class="list"><a href="userapple.php">Apple</a></li>
-  			<li class="list"><a href="usersamsung.php">Samsung</a></li>
-  			<li class="list"><a href="usersony.php">Sony</a></li>
-  			<li class="list"><a href="userxiomi.php">Xiaomi</a></li>
-  			<li class="list"><a href="useroppo.php">Oppo</a></li>
-  			<li class="list"><a href="usercart.php">Cart</a></li>
+		<li class="list"><a href="homepage.php">Mi Store</a></li>
+  			<li class="list"><a href="apple.php">Apple</a></li>
+  			<li class="list"><a href="samsung.php">Samsung</a></li>
+  			<li class="list"><a href="sony.php">Sony</a></li>
+  			<li class="list"><a href="xiaomi.php">Xiaomi</a></li>
+  			<li class="list"><a href="oppo.php">Oppo</a></li>
+  			<li class="list"><a href="cart.php">Cart</a></li>
   		<form action="/action_page.php">
   			<li class="Search"><a href="#about"><input type="text" name="search" placeholder="Search.."></a></li>
   		</form>
@@ -46,37 +65,39 @@
   
 	<h1> Update Details</h1>
 	<p>Please fill in this form</p><br>
+
 		<form name="Userdetail" onreset="myAlertFunction()" onsubmit="return(validate());">		
+		<input type="hidden" name="userID" value="<?php echo $userID;?>">
 		<label for="fname"><b>First name</b></label>
-		<input type="text"placeholder="First Name"name="fname"/>
+		<input type="text"placeholder="First Name"name="firstname" value="<?php echo @$data['firstname']?>"/>
 		<br>
 		<label for="lname"><b>Last name</b></label>
-		<input type="text"placeholder="Last Name"name="lname"/>
+		<input type="text"placeholder="Last Name"name="lastname" value="<?php echo @$data['lastname']?>" />
 		<br>
 		<label for="username"><b>Username</b></label>
-		<input type="text"placehlder="username"name="uname"/>
+		<input type="text"placehlder="username"name="username" value="<?php echo @$data['username']?>" readonly />
 		<br>
 		<label for="Nophone"><b>No.Phone</b></label>
-		<input type="text"placehlder="Nophone"name="nophone"/>
+		<input type="text"placehlder="Nophone"name="nophone" value="<?php echo @$data['nophone']?>" />
 		<br>
 		<label for="email"><b>Email</b></label>
-		<input type="text"placeholder="email id"name="email"required />
+		<input type="text"placeholder="email id"name="email" value="<?php echo @$data['email']?>" required />
 		<br>
 		<label for="psw"><b>Password</b></label>
-		<input type="password"placeholder="password"name="psw" required />
+		<input type="password"placeholder="password"name="password" value="<?php echo @$data['password']?>" required />
 		<br>
 		<label for="conpsw"><b>Confirm Password</b></label>
-		<input type="password"placeholder="Confirm password"name="conpsw"required/>
+		<input type="password"placeholder="Confirm password"name="conpsw" value="<?php echo @$data['password']?>"required/>
 		<br>
 		<label for="Gender"><b>Gender:</b></label>
 		<input class="gender" type="radio"name="genders" value="Male"required> Male
 		<input class="gender"type="radio"name="genders"value="Female"required> Female<br>
 		<br>
 		<label for="address"><b>Address</b></label>
-		<input type="text"placeholder="address"name="address" cols="40"rows="2"/>
+		<input type="text"placeholder="address"name="address" cols="40"rows="2" value="<?php echo @$data['address']?>" />
 		<br>
 		<label for="postcode"><b>Post Code</b></label>
-		<input type="text"placeholder="Post Code"name="postcode"/>
+		<input type="text"placeholder="Post Code"name="poskod" value="<?php echo @$data['poskod']?>" />
 		<br>
 		<label for="state"><b>State: </b></label>
 		<select name="state">
@@ -100,7 +121,7 @@
 		</select>
 		<br>
 		<label for="country"><b>Country</b></label>
-		<input type="text"placeholder="Country"name="country" />
+		<input type="text"placeholder="Country"name="country" value="<?php echo @$data['country']?>" />
 		<br>
 		<br><br>
 
@@ -108,7 +129,7 @@
 				
 				<button type="reset" name="resetbtn" class="button"value="reset the form">Clear</button>
 
-				<button type="submit"name="submit"class="button"value="submited"><a href="userdetails.php">Update</button></a><br><br>
+				<button type="submit"name="submit"class="button"value="submited"><a href="updateuserdetails.php">Update</button></a><br><br>
 
 				<button class="btnuserpage"><a href="userdetails.php">Cancel</a></button>
 			
@@ -119,3 +140,16 @@
 <footer>Mistore, 2019</footer>
 </body>
 </html>
+<?php
+		}
+		elseif ($usertype === "admin") {
+			?><script type="text/javascript">location.replace("../admin/homepageadmin.php");</script><?php
+		}
+		else{
+			?><script type="text/javascript">location.replace("../index.php");</script><?php
+		}
+	}
+	else{
+		?><script type="text/javascript">location.replace("../index.php");</script><?php
+	}
+?>

@@ -45,7 +45,7 @@
 	<h1> Sign Up</h1>
 	<p>Please fill in this form</p><br>
 		<form name="Signup" onreset="myAlertFunction()" onsubmit="return(validate());" method="post" action="actionsignup.php">
-
+			<input type="hidden" name="access" value="user">
 			<div class="user_i">		
 				<label for="firstname"></label>
 				<input type="text" placeholder="First Name" name="firstname"/>
