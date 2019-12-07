@@ -35,7 +35,7 @@
     <li><a href="deleteitem.php">Delete Data</a></li>
     <li><a href="updateitem.php">Update Data</a></li>
     <li><a href="summaryitem.php">Summary Data</a></li>
-    <li><a href="signout.php">Log Out</a></li>
+    <li><a href="../sign-out.php">Log Out</a></li>
   </ul>
 </div>
 <div id="content">

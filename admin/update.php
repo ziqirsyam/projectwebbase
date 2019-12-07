@@ -13,7 +13,7 @@
 	product_name = '$product_name', 
 	price = '$price', 
 	brand = '$brand', 
-	details = '$details', 
+	details = '$details' 
 	WHERE  itemID = '$itemID'";
 
 	$query = mysql_query($sql, $connection);

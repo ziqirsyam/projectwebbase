@@ -55,7 +55,7 @@
 	 
 	 <h1>Checkout</h1>
   <div class="flex-container2">
-      <form class="flex-container-form1" action="/action_page.php" >
+      <form method="POST" class="flex-container-form1" action="/action_page.php" >
         <h3><a class="menu"> Billing Address</a></h3>
         <div class="user_fname">    
           <input type="text" name="fname" autocomplete="off" required />

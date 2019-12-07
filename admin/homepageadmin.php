@@ -42,18 +42,63 @@
 </div>
 
 <div id="content">
+	<?php
+    	require "../database/conndb.php";
+    	$sql = "SELECT itemID,  FROM item";
+    	$result = mysql_query($sql, $connection);
+  	?>
 	<h1>  Dashboard </h1><br>
 	<p>Details</p><br>
 
 	<div id="info">
-		<div class="info-one">Info </div>
-		<div class="info-panel">Php </div>
+		<div class="info-one">
+			Total Each brand 
+		</div>
+		<div class="info-panel">
+			<?php
+			    require "../database/conndb.php";
+			    $sql = "SELECT brand, COUNT(brand) FROM item GROUP BY brand";
+			    $result = mysql_query($sql, $connection);
+			?>
+  <table>
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Brand</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+        $i = 1;
+        while ($row = mysql_fetch_array($result)) {
+        ?>
+        <tr>
+          <td><?php echo $i; ?></td>
+          <td><?php echo $row['brand'];?></td>
+          <td><?php echo $row['COUNT(brand)'];?></td>
+        </tr>
+        <?php
+        $i++;
+        }
+      ?>
+    </tbody>
+  </table> 
+		</div>
 		
 	</div>
 
 	<div id="info">
-		<div class="info-one">Info </div>
-		<div class="info-panel">Php </div>
+		<div class="info-one">Total phone </div>
+		<div class="info-panel">
+		<?php
+		    require "../database/conndb.php";
+		    $sql = "SELECT COUNT(brand) FROM item";
+		    $result = mysql_query($sql, $connection);
+		    $row = mysql_fetch_array($result)
+		?>
+		<?php echo $row['COUNT(brand)'];?> 
+		</div>
 		
 	</div>
 

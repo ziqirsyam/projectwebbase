@@ -61,8 +61,7 @@ Add New Inventory Item Form
     <div class="price">
     <td><p  class="proprice">Product Price</p></td>
     <td><label>
-          <input name="price" type="text" id="price" size="12" />
-          €
+          RM <input name="price" type="text" id="price" size="12" />
     </label></td>
   </div>
   </tr>
