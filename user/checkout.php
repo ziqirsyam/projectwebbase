@@ -55,7 +55,7 @@
 	 
 	 <h1>Checkout</h1>
   <div class="flex-container2">
-      <form method="POST" class="flex-container-form1" action="/action_page.php" >
+      <form method="POST" class="flex-container-form1" action="receipt.php" >
         <h3><a class="menu"> Billing Address</a></h3>
         <div class="user_fname">    
           <input type="text" name="fname" autocomplete="off" required />
@@ -79,7 +79,7 @@
         </div>
         <br>
         <div class="user_city">    
-          <input type="text" name="lname" autocomplete="off" required />
+          <input type="text" name="city" autocomplete="off" required />
           <label for="city" class="label_city">
             <span class="content_city">City</span>
           </label>
@@ -93,8 +93,8 @@
         </div>
         <br>
         <div class="user_count">    
-          <input type="text" name="count" autocomplete="off" required />
-          <label for="count" class="label_count">
+          <input type="text" name="country" autocomplete="off" required />
+          <label for="country" class="label_count">
             <span class="content_count">Country</span>
           </label>
         </div>
@@ -106,6 +106,12 @@
           </label>
         </div>
         <br>
+        <div class="sub-button">
+                <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <input type="submit" value="Continue to checkout" class="btn">
+            </div>
     </form>
         <form class="flex-container-form2">
             <h3>Payment</h3>
@@ -155,12 +161,6 @@
                 </form>
               </div>
             </body>
-            <div class="sub-button">
-                <label>
-                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                </label>
-                <input type="submit" value="Continue to checkout" class="btn">
-            </div>
 
     <!--<div class="container">
       <h4 class="cart">Cart

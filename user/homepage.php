@@ -25,11 +25,11 @@
 	<article>
 	<div class="link">
 	<div class="flex-container">
-			<div class="board"><a href="brand/apple.html"><img src="../img/iphone 11(1).png">Learn more</a> <br></div>
-			<div class="Samsung"><a href="brand/samsung.html"><img src="../img/Samsung1.png">Learn more</a><br></div>
-			<div class="Sony"><a href="brand/sony.html"><img src="../img/Sony 1.png">Learn more</a><br></div>
-			<div class="Xiaomi"><a  href="brand/xiaomi.html"><img src="../img/Xiaomi 1.png">Learn more</a><br></div>
-			<div class="Oppo"><a href="brand/oppo.html"><img src="../img/Oppo 1.png">Learn more</a><br></div>
+			<div class="board"><a href="apple.php"><img src="../img/iphone 11(1).png">Learn more</a> <br></div>
+			<div class="Samsung"><a href="samsung.php"><img src="../img/Samsung1.png">Learn more</a><br></div>
+			<div class="Sony"><a href="sony.php"><img src="../img/Sony 1.png">Learn more</a><br></div>
+			<div class="Xiaomi"><a  href="xiaomi.php"><img src="../img/Xiaomi 1.png">Learn more</a><br></div>
+			<div class="Oppo"><a href="oppo.php"><img src="../img/Oppo 1.png">Learn more</a><br></div>
 		</div>
 	</div>
 	<script>
