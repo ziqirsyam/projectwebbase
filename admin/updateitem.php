@@ -47,7 +47,7 @@ Update Inventory Item Form
 </h3><br>
 
 <div id="content">
-  <h3>Delete User</h3>
+  <h3>Update Product</h3>
   <?php
     require "../database/conndb.php";
     $sql = "SELECT * FROM item";
@@ -87,58 +87,7 @@ Update Inventory Item Form
   </table>
 </div>
 
-<form action="inventory_list.php" enctype="multipart/form-data" name="myForm" id="myform" method="post">
-  <tr>
-    <td>Product Name</td>
-    <td><label>
-      <input name="product_name" type="text" id="product_name" size="64" />
-    </label></td>
-  </tr>
-  <tr>
-    <td align="left">Product Price</td>
-    <td><label>
-      €
-          <input name="price" type="text" id="price" size="12" />
-    </label></td>
-  </tr>
-   <tr>
-    <td align="left">Category</td>
-    <td><label>
-      <select name="brand" id="brand">
-      <option value="apple">Apple</option>
-      <option value="xiaomi">Xiaomi</option>
-      <option value="oppo">Opoo</option>
-      <option value="sony">Sony</option>
-      <option value="samsung">Samsung</option>
-      </select>
-    </label></td>
-  </tr>
-  <br>
-  <br>
-  <tr>
-    <td align="left">Product Details</td><br>
-    <td><label>
-      <textarea name="details" id="details" cols="64" rows="5"></textarea>
-    </label></td>
-  </tr>
-  <br><br>
-  <tr>
-    <td align="left">Quantity</td>
-    <td><label>
-      =
-          <input name="quantity" type="text" id="quantity
-          " size="12" />
-    </label></td>
-  </tr>
-  <br><br>      
-  <tr>
-    <td>&nbsp;</td>
-    <td><label>
-      <input type="submit" name="button" id="button" value="Delete Item" />
-    </label></td>
-  </tr>
-</table>
-</form>
+
 </div>
 </div>
 <footer>
