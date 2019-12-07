@@ -55,7 +55,7 @@
             <img src=".jpg" alt="" />
           </div>
           <div class="description">
-            <span>iPhone 11</span>
+            <span><?php echo $_GET['name'];?></span>
             <span>White</span>
           </div>
           <div class="quantity">

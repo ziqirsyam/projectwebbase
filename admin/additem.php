@@ -1,9 +1,28 @@
+<?php
+  @session_start();
+  include "../database/conndb.php";
+
+  if (@$_SESSION['user']) {
+    $user = @$_SESSION['user'];
+
+    $sql = mysql_query("SELECT * FROM user WHERE username = '$user'") or die(mysql_error());
+    $data = mysql_fetch_array($sql);
+    $result = mysql_num_rows($sql);
+    $usertype = $data['access'];
+    if ($usertype === "admin") {
+      $userid = $user;
+      $sql = mysql_query("SELECT * FROM user WHERE username = '$userid'") or die(mysql_error());
+      $data = mysql_fetch_array($sql);
+      $result = mysql_num_rows($sql);
+
+      @$_SESSION['user'] = $userid;
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Addiem</title>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link rel="stylesheet"type="text/css"href="adminstyle.css"/>
+  <link rel="stylesheet"type="text/css"href="../css/adminstyle.css"/>
 </head>
 <body>
   <div id="header"><br><br>
@@ -13,13 +32,13 @@
 <div id="container">
 <div id="sidebar">
   <ul id="nav">
-    <li><a class="dash"href="adminhomepage.php">Dashboard</a></li>
+    <li><a class="dash"href="homepageadmin.php">Dashboard</a></li>
     <li><a href="additem.php">Add Data</a></li>
     <li><a href="deleteitem.php">Delete Data</a></li>
     <li><a href="updateitem.php">Update Data</a></li>
     <li><a href="summaryitem.php">Summary Data</a></li>
     <li><a href="daffa.php">Developer Email</a></li>
-    <li><a href="signinadmin">Log Out</a></li>
+    <li><a href="sign-out.php">Log Out</a></li>
   </ul>
 </div>
 	<div align="right"><a href="inventory_list.php#inventoryForm">+ Add New Inventory Item</a></div>
@@ -29,7 +48,7 @@
 <h3>
 Add New Inventory Item Form
 </h3>
-<form action="inventory_list.php" enctype="multipart/form-data" name="myForm" id="myform" method="post">
+<form action="add.php" enctype="multipart/form-data" name="myForm" id="myform" method="post">
   <tr>
     <div class="name">
     <td><p  class="proname"> Product Name</p></td>
@@ -92,3 +111,16 @@ Add New Inventory Item Form
 </form>
 </body>
 </html>
+<?php
+    }
+    elseif ($usertype === "user") {
+      ?><script type="text/javascript">location.replace("../admin/homepageadmin.php");</script><?php
+    }
+    else{
+      ?><script type="text/javascript">location.replace("../index.php");</script><?php
+    }
+  }
+  else{
+    ?><script type="text/javascript">location.replace("../index.php");</script><?php
+  }
+?>

@@ -66,7 +66,7 @@
 	<h1> Update Details</h1>
 	<p>Please fill in this form</p><br>
 
-		<form name="Userdetail" onreset="myAlertFunction()" onsubmit="return(validate());">		
+		<form name="Userdetail" onreset="myAlertFunction()" action="updateuserdetails.php" method="post" onsubmit="return(validate());">		
 		<input type="hidden" name="userID" value="<?php echo $userID;?>">
 		<label for="fname"><b>First name</b></label>
 		<input type="text"placeholder="First Name"name="firstname" value="<?php echo @$data['firstname']?>"/>
@@ -90,8 +90,8 @@
 		<input type="password"placeholder="Confirm password"name="conpsw" value="<?php echo @$data['password']?>"required/>
 		<br>
 		<label for="Gender"><b>Gender:</b></label>
-		<input class="gender" type="radio"name="genders" value="Male"required> Male
-		<input class="gender"type="radio"name="genders"value="Female"required> Female<br>
+		<input class="gender" type="radio" name="gender" value="Male" <?php if (@$data['gender'] == 'Male') echo 'checked'?> > Male
+		<input class="gender" type="radio" name="gender" value="Female" <?php if (@$data['gender'] == 'Female') echo 'checked'?> > Female<br>
 		<br>
 		<label for="address"><b>Address</b></label>
 		<input type="text"placeholder="address"name="address" cols="40"rows="2" value="<?php echo @$data['address']?>" />
@@ -102,22 +102,22 @@
 		<label for="state"><b>State: </b></label>
 		<select name="state">
 		<option value="1">(Please select a State)</option>
-		<option value="KUL">Kuala Lumpur</option>
-		<option value="LBN">Labuan</option>
-		<option value="PJY">Putrajaya</option>
-		<option value="JHR">Johor</option>
-		<option value="KDH">Kedah</option>
-		<option value="KTN">Kelantan</option>
-		<option value="MLK">Melaka</option>
-		<option value="NSN">N.Sembilan</option>
-		<option value="PHG">Pahang</option>
-		<option value="PRK">Perak</option>
-		<option value="PLS">Perlis</option>
-		<option value="PNG">P.Pinang</option>
-		<option value="SBH">Sabah</option>
-		<option value="SWK">Sarawak</option>
-		<option value="SGR">Selangor</option>
-		<option value="TRG">Terengganu</option>
+		<option value="KUL" <?php if (@$data['state'] == 'KUL') echo 'selected'?> >Kuala Lumpur</option>
+		<option value="LBN" <?php if (@$data['state'] == 'LBN') echo 'selected'?> >Labuan</option>
+		<option value="PJY" <?php if (@$data['state'] == 'PJY') echo 'selected'?> >Putrajaya</option>
+		<option value="JHR" <?php if (@$data['state'] == 'JHR') echo 'selected'?> >Johor</option>
+		<option value="KDH" <?php if (@$data['state'] == 'KDH') echo 'selected'?> >Kedah</option>
+		<option value="KTN" <?php if (@$data['state'] == 'KTN') echo 'selected'?> >Kelantan</option>
+		<option value="MLK" <?php if (@$data['state'] == 'MLK') echo 'selected'?> >Melaka</option>
+		<option value="NSN" <?php if (@$data['state'] == 'NSN') echo 'selected'?> >N.Sembilan</option>
+		<option value="PHG" <?php if (@$data['state'] == 'PHG') echo 'selected'?> >Pahang</option>
+		<option value="PRK" <?php if (@$data['state'] == 'PRK') echo 'selected'?> >Perak</option>
+		<option value="PLS" <?php if (@$data['state'] == 'PLS') echo 'selected'?> >Perlis</option>
+		<option value="PNG" <?php if (@$data['state'] == 'PNG') echo 'selected'?> >P.Pinang</option>
+		<option value="SBH" <?php if (@$data['state'] == 'SBH') echo 'selected'?> >Sabah</option>
+		<option value="SWK" <?php if (@$data['state'] == 'SWK') echo 'selected'?> >Sarawak</option>
+		<option value="SGR" <?php if (@$data['state'] == 'SGR') echo 'selected'?> >Selangor</option>
+		<option value="TRG" <?php if (@$data['state'] == 'TRG') echo 'selected'?> >Terengganu</option>
 		</select>
 		<br>
 		<label for="country"><b>Country</b></label>
@@ -125,16 +125,16 @@
 		<br>
 		<br><br>
 
-<div class="btnupdate">
+		<div class="btnupdate">
 				
 				<button type="reset" name="resetbtn" class="button"value="reset the form">Clear</button>
 
-				<button type="submit"name="submit"class="button"value="submited"><a href="updateuserdetails.php">Update</button></a><br><br>
+				<button type="submit"name="submit"class="button"value="submited">Update</button><br><br>
 
 				<button class="btnuserpage"><a href="userdetails.php">Cancel</a></button>
 			
 		</div>
-	</button>
+	</form>
 </div>
 </article>
 <footer>Mistore, 2019</footer>

@@ -40,8 +40,9 @@
 		</nav>-->
 		<?php include 'brandnavbar.php'?>
 <article>
+	<p class="brand">Xiaomi Product</p>
 	<div class="flex-container2">
-			<div class="pocophone"><p>Pocophone</p><a href="pocophone.php"><img src="">Buy</a><br></div>
+			<div class="pocophone"><p>Pocophone</p><a href="../sign-in.php"><img src="">Buy</a><br></div>
 	</div>
 </article>
 </body>

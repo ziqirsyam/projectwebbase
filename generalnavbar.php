@@ -1,6 +1,6 @@
 <header><!--top navigation-->
 		<title>HomePage</title>
-		<link rel="stylesheet" type="text/css" href="indexdeis.css">
+		<link rel="stylesheet" type="text/css" href="/css/indexdeis.css">
 	</header>
 	<nav>
 	<!--side navigation-->
@@ -19,7 +19,7 @@
   			<li class="list"><a href="brand/apple.php">Apple</a></li>
   			<li class="list"><a href="brand/samsung.php">Samsung</a></li>
   			<li class="list"><a href="brand/sony.php">Sony</a></li>
-  			<li class="list"><a href="brand/xiaomo.php">Xiaomi</a></li>
+  			<li class="list"><a href="brand/xiaomi.php">Xiaomi</a></li>
   			<li class="list"><a href="brand/oppo.php">Oppo</a></li>
   			<li class="list"><a href="Sign-in.php">Cart</a></li>
   		<form action="/action_page.php">

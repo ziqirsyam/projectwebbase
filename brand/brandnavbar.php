@@ -12,8 +12,8 @@
 		    <li class="dropdown">
 		     <a class="dropbtn">More</a>
 		    <div class="dropdown-content">
-			<a href="sign-up.php">Sign Up</a>
-     		<a href="Sign-in.php">Sign in</a>
+			<a href="../sign-up.php">Sign Up</a>
+     		<a href="../Sign-in.php">Sign in</a>
 		</div></li> 
 		<li class="list"><a href="../index.php">Mi Store</a></li>
   			<li class="list"><a href="apple.php">Apple</a></li>

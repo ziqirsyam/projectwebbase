@@ -81,7 +81,7 @@
 	   	<input type="text"placeholder="Username" name="username"/><br>
 	   	<input type="password" placeholder="Password" name="password"/><br>
 	    <button type="submit" class="button" name="login" value="singinbtn" onclick="check(this.form)">Log in</button>
-	    <p class="message">Want to Register? <a href="signup.html">Sign Up</a></p>
+	    <p class="message">Want to Register? <a href="sign-up.php">Sign Up</a></p>
 		</div>
 	    </form>
 	</div>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Sony</title>
-	<link rel="stylesheet" type="text/css" href="branddeis.css">
+	<link rel="stylesheet" type="text/css" href="../css/branddeis.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
@@ -20,11 +20,11 @@
      		<a class="log-in" href="#">Sign Out</a>
 		</div></li>
 		<li class="list"><a href="#Mistore">Mi Store</a></li>
-  			<li class="list"><a href="userapple.php">Apple</a></li>
-  			<li class="list"><a href="usersamsung.php">Samsung</a></li>
-  			<li class="list"><a href="usersony.php">Sony</a></li>
-  			<li class="list"><a href="userxiomi.php">Xiaomi</a></li>
-  			<li class="list"><a href="useroppo.php">Oppo</a></li>
+  			<li class="list"><a href="apple.php">Apple</a></li>
+  			<li class="list"><a href="samsung.php">Samsung</a></li>
+  			<li class="list"><a href="sony.php">Sony</a></li>
+  			<li class="list"><a href="xiaomi.php">Xiaomi</a></li>
+  			<li class="list"><a href="oppo.php">Oppo</a></li>
   			<div class="cart">
   			<li class="list"><a href="#about"><i class="fas fa-shopping-cart"></i></a></li>
   		</div>
@@ -38,9 +38,9 @@
 <article>
 	<p class="brand">Sony Product</p>
 	<div class="flex-container2">
-			<div class="xperiap"><p>Sony Xperia P</p><a href="xperiap.php"><img src="">Buy</a><br></div>
-			<div class="xperiaz"><p>Sony Xperia Z</p><a href="xperiaz.php"><img src="">Buy</a><br></div>
-			<div class="xperiaxz"><p>Sony Xperia XZ Premium</p><a href="xperiaxz.php"><img src="">Buy</a><br></div>
+			<div class="xperiap"><p>Sony Xperia P</p><a href="../sign-in.php"><img src="">Buy</a><br></div>
+			<div class="xperiaz"><p>Sony Xperia Z</p><a href="../sign-in.php"><img src="">Buy</a><br></div>
+			<div class="xperiaxz"><p>Sony Xperia XZ Premium</p><a href="../sign-in.php"><img src="">Buy</a><br></div>
 	</div>
 </article>
 </body>

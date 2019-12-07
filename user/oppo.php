@@ -40,8 +40,8 @@
 	<article>
 		<p class="brand">Oppo Product</p>
 	<div class="flex-container2">
-			<div class="oppof1s"><p>Oppo F1S</p><a href="oppof1s.php"><img src="">Buy</a><br></div>
-			<div class="oppoa37"><p>Oppo A37</p><a href="oppoa37.php"><img src="">Buy</a><br></div>
+			<div class="oppof1s"><p>Oppo F1S</p><a href="oppof1s.php">Buy</a><br></div>
+			<div class="oppoa37"><p>Oppo A37</p><a href="oppoa37.php">Buy</a><br></div>
 	</div>
 </article>
 </body>

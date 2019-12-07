@@ -1,7 +1,7 @@
 	
 <header><!--top navigation-->
 		<title>HomePage</title>
-		<link rel="stylesheet" type="text/css" href="userdeis.css">
+		<link rel="stylesheet" type="text/css" href="/css/userdeis.css">
 	</header>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<nav>

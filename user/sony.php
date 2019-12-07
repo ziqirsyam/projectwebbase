@@ -40,9 +40,9 @@
 <article>
 	<p class="brand">Sony Product</p>
 	<div class="flex-container2">
-			<div class="xperiap"><p>Sony Xperia P</p><a href="xperiap.php"><img src="">Buy</a><br></div>
-			<div class="xperiax"><p>Sony Xperis X</p><a href="xperiax.php"><img src="">Buy</a><br></div>
-			<div class="xperiaxz"><p>Sony Xperis XZ Premium</p><a href="xperiaxz.php"><img src="">Buy</a><br></div>
+			<div class="xperiap"><p>Sony Xperia P</p><a href="cart.php?name=Sony Xperia P">Buy</a><br></div>
+			<div class="xperiaz"><p>Sony Xperis Z</p><a href="cart.php?name=Sony Xperia Z">Buy</a><br></div>
+			<div class="xperiaxz"><p>Sony Xperis XZ Premium</p><a href="cart.php?name=Sony Xperia XZ Premium">Buy</a><br></div>
 	</div>
 </article>
 </body>

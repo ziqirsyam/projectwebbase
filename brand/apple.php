@@ -42,11 +42,11 @@
 	<article>
 			<p class="brand">Apple Product</p>
 	<div class="flex-container2">
-			<div class="iphone11"><p>iPhone 11</p><a href="iphone11.php"><img src="">Buy</a><br></div>
-			<div class="iphone11promax"><p>iPhone 11 Pro Max</p><a href="iphone11promax.php"><img src="">Buy</a><br></div>
-			<div class="iphone10"><p>iPhone 10</p><a href="iphone10.php"><img src="">Buy</a><br></div>
-			<div class="iphone8plus"><p>iPhone 8 Plus</p><a  href="iphone8plus.php"><img src="">Buy</a><br></div>
-			<div class="iphone7plus"><p>iPhone 7 Plus</p><a href="iphone7plus.php"><img src="">Buy</a><br></div>
+			<div class="iphone11"><p>iPhone 11</p><a href="../sign-in.php"><img src="">Buy</a><br></div>
+			<div class="iphone11promax"><p>iPhone 11 Pro Max</p><a href="../sign-in.php"><img src="">Buy</a><br></div>
+			<div class="iphone10"><p>iPhone 10</p><a href="../sign-in.php"><img src="">Buy</a><br></div>
+			<div class="iphone8plus"><p>iPhone 8 Plus</p><a  href="../sign-in.php"><img src="">Buy</a><br></div>
+			<div class="iphone7plus"><p>iPhone 7 Plus</p><a href="../sign-in.php"><img src="">Buy</a><br></div>
 	</div>
 </article>
 

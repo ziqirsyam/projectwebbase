@@ -40,11 +40,11 @@
 <article>
 	<p class="brand">Samsung Product</p>
 	<div class="flex-container2">
-			<div class="samsungs9"><p>Samsung Galaxy S9</p><a href="samsungs9.php"><img src="">Buy</a><br></div>
-			<div class="samsungnote9"><p>Samsung Galaxy Note 9</p><a href="samsungnote9.php"><img src="">Buy</a><br></div>
-			<div class="samsungs10"><p>Samsung Galaxy S10+</p><a href="samsungs10+.php"><img src="">Buy</a><br></div>
-			<div class="samsungs8"><p>Samsung Galaxy S8</p><a  href="samsungs8.php"><img src="">Buy</a><br></div>
-			<div class="samsungnote3"><p>Samsung Galaxy Note 3</p><a href="samsungnote3.php"><img src="">Buy</a><br></div>
+			<div class="samsungs9"><p>Samsung Galaxy S9</p><a href="cart.php?name=Samsung Galaxy S9">Buy</a><br></div>
+			<div class="samsungnote9"><p>Samsung Galaxy Note 9</p><a href="cart.php?name=Samsung Galaxy Note9">Buy</a><br></div>
+			<div class="samsungs10"><p>Samsung Galaxy S10+</p><a href="cart.php?name=Samsung Galaxy S10+">Buy</a><br></div>
+			<div class="samsungs8"><p>Samsung Galaxy S8</p><a  href="cart.php?name=Samsung Galaxy S8">Buy</a><br></div>
+			<div class="samsungnote3"><p>Samsung Galaxy Note 3</p><a href="cart.php?name=Samsung Galaxy Note3">Buy</a><br></div>
 	</div>
 </article>
 </body>
