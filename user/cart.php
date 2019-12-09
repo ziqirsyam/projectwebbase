@@ -85,7 +85,7 @@
     </div>
 
 	<script type="text/javascript">
-      $('.minus-btn').on('click', function(e) {
+      $('.minusbutton').on('click', function(e) {
         e.preventDefault();
         var $this = $(this);
         var $input = $this.closest('div').find('input');
@@ -101,7 +101,7 @@
 
       });
 
-      $('.plus-btn').on('click', function(e) {
+      $('.plusbutton').on('click', function(e) {
         e.preventDefault();
         var $this = $(this);
         var $input = $this.closest('div').find('input');
@@ -116,7 +116,7 @@
         $input.val(value);
       });
 
-      $('.like-btn').on('click', function() {
+      $('.likebutton').on('click', function() {
         $(this).toggleClass('is-active');
       });
     </script>
