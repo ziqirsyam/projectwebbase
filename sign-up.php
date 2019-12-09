@@ -63,10 +63,10 @@
 				<input type="text" placeholder="email id" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Must be in proper email format (example: superclap09@suju.sm)" onfocus="myFunction(this)" />
 				<br>
 				<label for="password"></label>
-				<input type="password" placeholder="Password" name="password" pattern="^(?=.*[a-z])(?=.*[0-9])(?=.*[^\w\*])[^\s]{6,}$" title="Must contain at least 6 digits, one number, one uppercase and lowercase letter and no space allowed" onfocus="myFunction(this)" required />
+				<input type="password" placeholder="Password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[0-9])(?=.*[^\w\*])[^\s]{6,}$" title="Must contain at least 6 digits, one number, one uppercase and lowercase letter and no space allowed" onfocus="myFunction(this)" required />
 				<br>
 				<label for="conpsw"></label>
-				<input type="password" placeholder="Confirm password" name="conpsw" onfocus="myFunction(this)"/>
+				<input type="password" placeholder="Confirm password" name="conpsw" id="ConfirmPassword" onfocus="myFunction(this)"/>
 				<br>
 			</div>
 			<div class="user_s" >
