@@ -1,3 +1,22 @@
+<?php
+	@session_start();
+	include "../database/conndb.php";
+
+	if (@$_SESSION['user']) {
+		$user = @$_SESSION['user'];
+
+		$sql = mysql_query("SELECT * FROM user WHERE username = '$user'") or die(mysql_error());
+		$data = mysql_fetch_array($sql);
+		$result = mysql_num_rows($sql);
+		$usertype = $data['access'];
+		if ($usertype === "user") {
+			$userid = $user;
+			$sql = mysql_query("SELECT * FROM user WHERE username = '$userid'") or die(mysql_error());
+			$data = mysql_fetch_array($sql);
+			$result = mysql_num_rows($sql);
+
+			@$_SESSION['user'] = $userid;
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,5 +63,58 @@
 			<div class="oppoa37"><p>Oppo A37</p><a href="oppoa37.php">Buy</a><br></div>
 	</div>
 </article>
+<div class="flex-container2">
+	<?php
+	    require "../database/conndb.php";
+	    $sql = "SELECT * FROM item WHERE brand = 'oppo'";
+	    $result = mysql_query($sql, $connection);
+	?>
+	<form method="POST" action="addcart.php">
+		<table class="admin_detail">
+			<input type="hidden" name="cuser" value="<?php echo @$data['username'];?>">
+		    <thead>
+		      <tr>
+		        <th>No.</th>
+		        <th>Product Name</th>
+		        <th>Price</th>
+		        <th>Brand</th>
+		        <th>Details</th>
+		        <th>Action</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <?php
+		        $i = 1;
+		        while ($row = mysql_fetch_array($result)) {
+		        ?>
+		        <tr>
+		          <td><?php echo $i; ?></td>
+		          <td><?php echo $row['product_name'];?><input type="hidden" name="cproduct_name" value="<?php echo $row['product_name'];?>"></td>
+		          <td><?php echo $row['price'];?><input type="hidden" name="cprice" value="<?php echo $row['price'];?>"></td>
+		          <td><?php echo $row['brand'];?><input type="hidden" name="cbrand" value="<?php echo $row['brand'];?>"></td>
+		          <td><?php echo $row['details'];?><input type="hidden" name="cdetails" value="<?php echo $row['details'];?>"></td>
+		          <td><input type="submit" name="button" value="Buy"></td>
+		        </tr>
+		        <?php
+		        $i++;
+		        }
+		      ?>
+		    </tbody>
+		</table>
+	</form>
+</div>
 </body>
 </html>
+<?php
+		}
+		elseif ($usertype === "admin") {
+			?><script type="text/javascript">location.replace("../admin/homepageadmin.php");</script><?php
+		}
+		else{
+			?><script type="text/javascript">location.replace("../index.php");</script><?php
+		}
+	}
+	else{
+		?><script type="text/javascript">location.replace("../index.php");</script><?php
+	}
+?>

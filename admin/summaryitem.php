@@ -39,7 +39,7 @@
   </ul>
 </div>
 <div id="content">
-	<div align="right"><a href="inventory_list.php#inventoryForm">+ Update Inventory Item</a></div>
+	<!--<div align="right"><a href="inventory_list.php#inventoryForm">+ Update Inventory Item</a></div>-->
 
  <a name="inventoryForm" id="inventoryForm"></a>
 <h3>
@@ -47,7 +47,7 @@ Summary Item
 </h3><br>
 
 <div id="content">
-  <h3>Update Product</h3>
+  <h3>Product</h3>
   <?php
     require "../database/conndb.php";
     $sql = "SELECT * FROM item";
