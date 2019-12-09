@@ -45,7 +45,7 @@
     $sql = "SELECT * FROM user";
     $result = mysql_query($sql, $connection);
   ?>
-  <table>
+  <table class="admin_detail">
     <thead>
       <tr>
         <th>No.</th>
@@ -82,7 +82,7 @@
           <td>
             <form method="POST" action="delete.php">
               <input type="hidden" name="userID" value="<?php echo $row['userID'];?>">
-              <button>Delete</button>
+              <button class="delete">Delete</button>
             </form>
           </td>
         </tr>
@@ -95,13 +95,13 @@
 </div>
 
 <div id="content">
-  <h3>Delete User</h3>
+  <h3>Delete Product</h3>
   <?php
     require "../database/conndb.php";
     $sql = "SELECT * FROM item";
     $result = mysql_query($sql, $connection);
   ?>
-  <table>
+  <table class="admin_detail">
     <thead>
       <tr>
         <th>No.</th>
@@ -126,7 +126,7 @@
           <td>
             <form method="POST" action="delete.php">
               <input type="hidden" name="itemID" value="<?php echo $row['itemID'];?>">
-              <button>Delete</button>
+              <button class="delete">Delete</button>
             </form>
           </td>
         </tr>

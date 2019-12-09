@@ -77,9 +77,20 @@
 	   	<form class="login-form" action="" method="post">
 	   	<!--<img src="admin2.png"alt="adminpic"class="form-img"/><br>-->
 	   	<h1><b>Login</b><br></h1>
-	   	<div class="user_i">
-	   	<input type="text"placeholder="Username" name="username"/><br>
-	   	<input type="password" placeholder="Password" name="password"/><br>
+	   	<div class="user_uname">
+	   		<input type="text" name="username" required />
+	   		<label for="username" class="label_uname">
+				<span class="content_uname">Username</span>
+			</label>
+	   	</div>
+	   	<br>
+	   	<div class="user_psw">
+	   		<input type="password" name="password" required />
+	   		<label for="password" class="label_psw">
+				<span class="content_psw">Password</span>
+			</label>
+	   	</div>
+	   	<br>
 	    <button type="submit" class="button" name="login" value="singinbtn" onclick="check(this.form)">Log in</button>
 	    <p class="message">Want to Register? <a href="sign-up.php">Sign Up</a></p>
 		</div>

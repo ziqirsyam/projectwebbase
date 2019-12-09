@@ -46,37 +46,64 @@
 	<p>Please fill in this form</p><br>
 		<form name="Signup" onreset="myAlertFunction()" onsubmit="return(validate());" method="post" action="actionsignup.php">
 			<input type="hidden" name="access" value="user">
-			<div class="user_i">		
-				<label for="firstname"></label>
-				<input type="text" placeholder="First Name" name="firstname" pattern="^[a-zA-Z]+$" title="Only accept alphabet (either in uppercase, lowercase or mix)" onfocus="myFunction(this)"/>
-				<br>
-				<label for="lastname"></label>
-				<input type="text" placeholder="Last Name" name="lastname" pattern="^[a-zA-Z]+$" title="Only accept alphabet (either in uppercase, lowercase or mix)" onfocus="myFunction(this)" />
-				<br>
-				<label for="username"></label>
-				<input type="text" placeholder="username" name="username"/>
-				<br>
-				<label for="nophone"></label>
-				<input type="text" placeholder="phone number" name="nophone" onload='document.Signup.nophone.focus()'/>
-				<br>
-				<label for="email"></label>
-				<input type="text" placeholder="email id" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Must be in proper email format (example: superclap09@suju.sm)" onfocus="myFunction(this)" />
-				<br>
-				<label for="password"></label>
-				<input type="password" placeholder="Password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[0-9])(?=.*[^\w\*])[^\s]{6,}$" title="Must contain at least 6 digits, one number, one uppercase and lowercase letter and no space allowed" onfocus="myFunction(this)" required />
-				<br>
-				<label for="conpsw"></label>
-				<input type="password" placeholder="Confirm password" name="conpsw" id="ConfirmPassword" onfocus="myFunction(this)"/>
-				<br>
+			<div class="user_name">		
+				<input type="text" name="firstname" required/>
+				<label for="firstname" class="label_name">
+					<span class="content_name">First Name</span>
+				</label>
 			</div>
+			<br>
+			<div class="user_lname">
+				<input type="text" name="lastname" required />
+				<label for="lastname" class="label_lname">
+					<span class="content_lname">Last Name</span>
+				</label>
+			</div>
+			<br>
+			<div class="user_uname">
+				<input type="text" name="username" required/>
+				<label for="username" class="label_uname">
+					<span class="content_uname">Username</span>
+				</label>
+			</div>
+			<br>
+			<div class="user_no">
+				<input type="text" name="nophone" onload='document.Signup.nophone.focus()'required/>
+				<label for="nophone" class="label_no">
+					<span class="content_no">Phone Number</span>
+				</label>
+			</div>	
+			<br>	
+			<div class="user_email">
+				<input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Must be in proper email format (example: superclap09@suju.sm)" onfocus="myFunction(this)" required/>
+				<label for="email" class="label_email">
+					<span class="content_email">Email</span>
+				</label>
+			</div>	
+			<br>
+			<div class="user_psw">
+				<input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[0-9])(?=.*[^\w\*])[^\s]{6,}$" title="Must contain at least 6 digits, one number, one uppercase and lowercase letter and no space allowed" onfocus="myFunction(this)" required />
+				<label for="password" class="label_psw">
+					<span class="content_psw">Password</span>
+				</label>
+			</div>
+			<br>
+			<div class="user_conpsw">
+				<input type="password" name="conpsw" id="ConfirmPassword" onfocus="myFunction(this)" required/>
+				<label for="conpsw" class="label_conpsw">
+					<span class="content_conpsw">Confirm Password</span>
+				</label>
+			</div>
+			<br>	
 			<div class="user_s" >
-				<label for="Gender"><b>Gender:</b></label>
-				<input class="gender" type="radio"name="genders" value="Male"required> Male
-				<span class="checkmark"></span>
-				<input class="gender"type="radio"name="genders"value="Female"required> Female
-				<span class="checkmark"></span>
-				<br>
-				<br>
+				<label class="radiobut" for="Gender"><b>Gender:</b>
+					<input class="gender" type="radio"name="genders" value="Male" required> Male
+					<span class="checkmark"></span>
+					<input class="gender"type="radio"name="genders"value="Female" required> Female
+					<span class="checkmark"></span>
+					<br>
+					<br>
+				</label>
 				<label for="state"><b>State: </b></label>
 				<div class="custom_select">
 					<select name="state">
