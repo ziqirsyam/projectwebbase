@@ -96,14 +96,13 @@
 			</div>
 			<br>	
 			<div class="user_s" >
-				<label class="radiobut" for="Gender"><b>Gender:</b>
-					<input class="gender" type="radio"name="genders" value="Male" required> Male
-					<span class="checkmark"></span>
-					<input class="gender"type="radio"name="genders"value="Female" required> Female
-					<span class="checkmark"></span>
-					<br>
-					<br>
-				</label>
+				<label for="Gender"><b>Gender:</b></label>
+				<input class="gender" type="radio"name="genders" id="gender" value="Male"required> Male
+				<span class="checkmark"></span>
+				<input class="gender"type="radio"name="genders" id="gender" value="Female"required> Female
+				<span class="checkmark"></span>
+				<br>
+				<br>
 				<label for="state"><b>State: </b></label>
 				<div class="custom_select">
 					<select name="state">
@@ -131,7 +130,7 @@
 	        	<textarea name="terms" cols="40" rows="2"readonly="readonly">TERMS AND CONDITIONS...</textarea>
 	        </p>
 	        <div class="user_a">
-				<label><input type="checkbox"checked name="accept">I ACCEPT THE ABOVE TERM AND CONDITIONS</label>
+				<label><input type="checkbox"checked name="accept" id="Terms">I ACCEPT THE ABOVE TERM AND CONDITIONS</label>
 			</div>
 			<div class="clearfix">
 				<button class="clear" type="reset" name="resetbtn" class="button"value="reset the form">Clear</button>

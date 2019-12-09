@@ -1,30 +1,17 @@
+// Form validation code will come here.
 function validate()
 {
   if( document.Signup.firstname.value == "" )
   {
-    alert( "Please provide your first name!" );
+    alert( "Please provide your First Name! in uppercase, lowercase or mix only" );
     document.Signup.firstname.focus() ;
     return false;
   }
 
-  if (!/^[a-zA-Z]*$/g.test(document.Signup.firstname.value)) 
-  {
-        alert("Invalid characters for the first name");
-        document.Signup.firstname.focus();
-        return false;
-  }
-
   if( document.Signup.lastname.value == "" )
   {
-    alert( "Please provide your last name!" );
-    document.Signup.lastname.focus() ;
-    return false;
-  }
-
-  if (!/^[a-zA-Z]*$/g.test(document.Signup.lastname.value)) 
-  {
-    alert("Invalid characters for the last name");
-    document.Signup.lastname.focus();
+    alert( "Please provide your Last Name! in uppercase, lowercase or mix only" );
+    document.myform.LName.focus() ;
     return false;
   }
 
@@ -35,13 +22,6 @@ function validate()
     return false;
   }
 
-  if (!/^[a-zA-Z]*$/g.test(document.Signup.username.value)) 
-  {
-    alert("Invalid characters for the username");
-    document.Signup.username.focus();
-    return false;
-  }
-
   if( document.Signup.nophone.value == "" )
   {
     alert( "Please provide your phone number!" );
@@ -49,88 +29,49 @@ function validate()
     return false;
   }
 
-  if (!/^\d{11}$/g.test(document.Signup.nophone.value)) 
-  {
-        alert("Invalid format of phone number");
-        document.Signup.nophone.focus();
-        return false;
-  }
-
   if( document.Signup.email.value == "" )
   {
-    alert( "Please provide your email address!" );
+    alert( "Please provide your Email and must be in proper format!" );
     document.Signup.email.focus() ;
     return false;
   }
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.Signup.email.value))
-  {
-    alert("You have entered an invalid email address!");
-    document.Signup.email.focus();
-    return (false)
-  }
 
-  if( document.Signup.password.value == "" )
-  {
-    alert( "Please provide your password!" );
-    document.Signup.password.focus() ;
-    return false;
-  }
-
-  if(document.Signup.password.value != "" && document.Signup.password.value == document.Signup.conpsw.value)
-  {
-   if(document.Userdetail.password.value.length < 6) {
-        alert("Password must contain at least six characters!");
-        document.Signup.password.focus();
+  var password = document.getElementById("password").value;
+    var conpsw = document.getElementById("ConfirmPassword").value;
+    if (password != conpsw) {
+        alert("Passwords does not match.");
         return false;
-      }
-      re = /[0-9]/;
-      if(!re.test(document.Signup.password.value)) {
-        alert("password must contain at least one number (0-9)!");
-        document.Signup.password.focus();
-        return false;
-      }
-      re = /[a-z]/;
-      if(!re.test(document.Signup.password.value)) {
-        alert("password must contain at least one lowercase letter (a-z)!");
-        document.Signup.password.focus();
-        return false;
-      }
-      re = /[A-Z]/;
-      if(!re.test(document.Signup.password.value)) {
-        alert("password must contain at least one uppercase letter (A-Z)!");
-        document.Signup.password.focus();
-        return false;
-      }
-       re = /[!@#|$%|^&]/;
-      if(!re.test(document.Signup.password.value)) {
-        alert("password must contain at least one special character!");
-        document.Signup.password.focus();
-        return false;
-      }
-  }
-     else {
-      alert("Please check that you've entered and confirmed your password!");
-      document.Signup.password.focus();
-      return false;
-      
-  }
-
-  if( document.Signup.genders.value =="")
-  {
-    alert( "Choose your gender" );
-    document.Signup.genders.focus();
-    return false;
-  }
+    }
 
   if( document.Signup.state.value == "-1" )
   {
-    alert( "Please select your State!" );
-    document.Signup.state.focus();
+    alert( "Please provide your State!" );
+    document.Signup.state.focus() ;
     return false;
   }
-
- alert("You have successfully register")
+  
+ alert("You have successfully registered!")
  return( true );
+}
+
+function validateFName() {
+  var x = document.myform.getElementById("FName").pattern;
+}
+
+function validateFName() {
+  var x = document.myform.getElementById("LName").pattern;
+}
+
+function validateEmail() {
+  var x = document.myform.getElementById("Email").pattern;
+}
+
+function validategender(){
+  var x = document.myform.getElementById("gender").required;
+}
+
+function validateTerms(){
+  var x = document.myform.getElementById("Terms").required;
 }
 
 function myAlertFunction() {
@@ -139,4 +80,18 @@ function myAlertFunction() {
 
 function myFunction(x) {
   x.style.background = "coral";
+}
+
+function phonenumber(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  if(inputtxt.value.match(phoneno))
+  {
+      return true;
+  }
+  else
+  {
+     alert("Not a valid Phone Number");
+     return false;
+  }
 }
