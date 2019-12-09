@@ -37,7 +37,7 @@
 	</ul>
 		</nav>
 		</section>-->
-<body>
+<body onload='document.Signup.nophone.focus()'>
 	<?php include 'generalnavbar.php'?>
 	
 	<div class="form">
@@ -48,25 +48,25 @@
 			<input type="hidden" name="access" value="user">
 			<div class="user_i">		
 				<label for="firstname"></label>
-				<input type="text" placeholder="First Name" name="firstname"/>
+				<input type="text" placeholder="First Name" name="firstname" pattern="^[a-zA-Z]+$" title="Only accept alphabet (either in uppercase, lowercase or mix)" onfocus="myFunction(this)"/>
 				<br>
 				<label for="lastname"></label>
-				<input type="text" placeholder="Last Name" name="lastname"/>
+				<input type="text" placeholder="Last Name" name="lastname" pattern="^[a-zA-Z]+$" title="Only accept alphabet (either in uppercase, lowercase or mix)" onfocus="myFunction(this)" />
 				<br>
 				<label for="username"></label>
 				<input type="text" placeholder="username" name="username"/>
 				<br>
 				<label for="nophone"></label>
-				<input type="text" placeholder="phone number" name="nophone"/>
+				<input type="text" placeholder="phone number" name="nophone" onload='document.Signup.nophone.focus()'/>
 				<br>
 				<label for="email"></label>
-				<input type="text" placeholder="email id" name="email"required />
+				<input type="text" placeholder="email id" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Must be in proper email format (example: superclap09@suju.sm)" onfocus="myFunction(this)" />
 				<br>
 				<label for="password"></label>
-				<input type="password" placeholder="Password" name="password" required />
+				<input type="password" placeholder="Password" name="password" pattern="^(?=.*[a-z])(?=.*[0-9])(?=.*[^\w\*])[^\s]{6,}$" title="Must contain at least 6 digits, one number, one uppercase and lowercase letter and no space allowed" onfocus="myFunction(this)" required />
 				<br>
 				<label for="conpsw"></label>
-				<input type="password" placeholder="Confirm password" name="conpsw"required/>
+				<input type="password" placeholder="Confirm password" name="conpsw" onfocus="myFunction(this)"/>
 				<br>
 			</div>
 			<div class="user_s" >
@@ -108,7 +108,7 @@
 			</div>
 			<div class="clearfix">
 				<button class="clear" type="reset" name="resetbtn" class="button"value="reset the form">Clear</button>
-				<button class="reg" type="submit"name="submit"class="button"value="submited">Register<a href="userpage.html"></button></a>
+				<button class="reg" type="submit"name="submit"class="button"value="submited" onclick="phonenumber(document.Signup.nophone)">Register<a href="userpage.html"></button></a>
 		    </div>
 		    	<p class="message">Already Registered? <a href="index.html">Homepage</a></p>
 	    </form>
