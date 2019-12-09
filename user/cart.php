@@ -2,11 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/userdeis.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <link rel="stylesheet" type="text/css" href="../css/userdeis.css" charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Cart</title>
-	<script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+	
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+  <meta name="robots" content="noindex,follow" />
 
     <!--<section>
     <nav>
@@ -80,34 +85,42 @@
     </div>
 
 	<script type="text/javascript">
-      $('.minusbutton').on('click', function(e) {
-    		e.preventDefault();
-    		var $this = $(this);
-    		var $input = $this.closest('div').find('input');
-    		var value = parseInt($input.val());
-    		if (value > 1) {
-    			value = value - 1;
-    		} else {
-    			value = 0;
-    		}
+      $('.minus-btn').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest('div').find('input');
+        var value = parseInt($input.val());
+
+        if (value > 1) {
+          value = value - 1;
+        } else {
+          value = 0;
+        }
+
         $input.val(value);
-    	});
-    	$('.plusbuttonn').on('click', function(e) {
-    		e.preventDefault();
-    		var $this = $(this);
-    		var $input = $this.closest('div').find('input');
-    		var value = parseInt($input.val());
-    		if (value < 100) {
-      		value = value + 1;
-    		} else {
-    			value =100;
-    		}
-    		$input.val(value);
-    	});
-      $('.likebutton').on('click', function() {
+
+      });
+
+      $('.plus-btn').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest('div').find('input');
+        var value = parseInt($input.val());
+
+        if (value < 100) {
+          value = value + 1;
+        } else {
+          value =100;
+        }
+
+        $input.val(value);
+      });
+
+      $('.like-btn').on('click', function() {
         $(this).toggleClass('is-active');
       });
     </script>
+	    
 	<?php include '../footer.php'?>
 </body>
 </html>
