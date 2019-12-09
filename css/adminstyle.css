@@ -178,8 +178,33 @@ input{
 
 
 
+/*delete table design*/
+.admin_detail,td,th{
+	border: solid grey;
+}
 
+th{
+	background-color: #000;
+	color: white;
+}
 
+.admin_detail{
+	border-collapse: collapse;
+    width: 90%;
+}
 
+.delete{
+	width: 100%;
+	border-color: #5fa8d3;
+  	background-color: #5fa8d3;
+  	border: none;
+  	color: white;
+  	text-align: center;
+  	opacity: 0.85;
+  	transition: 0.3s;
+  	cursor: pointer;
+}
 
-
+.delete:hover{
+	opacity: 1;
+}
