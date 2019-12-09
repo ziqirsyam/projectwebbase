@@ -48,10 +48,10 @@
 			<input type="hidden" name="access" value="user">
 			<div class="user_i">		
 				<label for="firstname"></label>
-				<input type="text" placeholder="First Name" name="firstname" pattern="^[a-zA-Z]+$" title="Only accept alphabet (either in uppercase, lowercase or mix)" onfocus="myFunction(this)"/>
+				<input type="text" placeholder="First Name" name="firstname" id="FName" pattern="^[a-zA-Z]+$" title="Only accept alphabet (either in uppercase, lowercase or mix)" onfocus="myFunction(this)"/>
 				<br>
 				<label for="lastname"></label>
-				<input type="text" placeholder="Last Name" name="lastname" pattern="^[a-zA-Z]+$" title="Only accept alphabet (either in uppercase, lowercase or mix)" onfocus="myFunction(this)" />
+				<input type="text" placeholder="Last Name" name="lastname" id="LName" pattern="^[a-zA-Z]+$" title="Only accept alphabet (either in uppercase, lowercase or mix)" onfocus="myFunction(this)" />
 				<br>
 				<label for="username"></label>
 				<input type="text" placeholder="username" name="username"/>
@@ -60,7 +60,7 @@
 				<input type="text" placeholder="phone number" name="nophone" onload='document.Signup.nophone.focus()'/>
 				<br>
 				<label for="email"></label>
-				<input type="text" placeholder="email id" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Must be in proper email format (example: superclap09@suju.sm)" onfocus="myFunction(this)" />
+				<input type="text" placeholder="email id" name="email" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Must be in proper email format (example: superclap09@suju.sm)" onfocus="myFunction(this)" />
 				<br>
 				<label for="password"></label>
 				<input type="password" placeholder="Password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[0-9])(?=.*[^\w\*])[^\s]{6,}$" title="Must contain at least 6 digits, one number, one uppercase and lowercase letter and no space allowed" onfocus="myFunction(this)" required />
@@ -71,9 +71,9 @@
 			</div>
 			<div class="user_s" >
 				<label for="Gender"><b>Gender:</b></label>
-				<input class="gender" type="radio"name="genders" value="Male"required> Male
+				<input class="gender" type="radio"name="genders" id="gender" value="Male"required> Male
 				<span class="checkmark"></span>
-				<input class="gender"type="radio"name="genders"value="Female"required> Female
+				<input class="gender"type="radio"name="genders" id="gender" value="Female"required> Female
 				<span class="checkmark"></span>
 				<br>
 				<br>
@@ -104,7 +104,7 @@
 	        	<textarea name="terms" cols="40" rows="2"readonly="readonly">TERMS AND CONDITIONS...</textarea>
 	        </p>
 	        <div class="user_a">
-				<label><input type="checkbox"checked name="accept">I ACCEPT THE ABOVE TERM AND CONDITIONS</label>
+				<label><input type="checkbox"checked name="accept" id="Terms">I ACCEPT THE ABOVE TERM AND CONDITIONS</label>
 			</div>
 			<div class="clearfix">
 				<button class="clear" type="reset" name="resetbtn" class="button"value="reset the form">Clear</button>
