@@ -71,7 +71,7 @@
 	<title>Checkout</title>
 </head>
 <body>
-	 
+	 <input type="hidden" name="payment" value="credit card">
 	 <h1>Checkout</h1>
   <div class="flex-container2">
       <form method="POST" class="flex-container-form1" action="receipt.php" >
@@ -91,7 +91,7 @@
         </div>
         <br>
         <div class="user_add">    
-          <input type="text" name="add" autocomplete="off" value="<?php echo @$data['address']?>" readonly />
+          <input type="text" name="add" autocomplete="off" value="<?php echo @$data['address']?>"  />
           <label for="add" class="label_add">
             <span class="content_add">Address</span>
           </label>
@@ -112,14 +112,14 @@
         </div>
         <br>
         <div class="user_count">    
-          <input type="text" name="country" autocomplete="off" value="<?php echo @$data['country']?>" readonly />
+          <input type="text" name="country" autocomplete="off" value="<?php echo @$data['country']?>" />
           <label for="country" class="label_count">
             <span class="content_count">Country</span>
           </label>
         </div>
         <br>
         <div class="user_code">    
-          <input type="text" name="code" autocomplete="off" value="<?php echo @$data['poskod']?>" readonly />
+          <input type="text" name="code" autocomplete="off" value="<?php echo @$data['poskod']?>"  />
           <label for="code" class="label_code">
             <span class="content_code">Post Code</span>
           </label>

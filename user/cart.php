@@ -68,7 +68,7 @@
       <h1>Cart</h1>
       <!-- Product 1 -->
 <div class="box2">
-      <div class="box">
+      <!--<div class="box">
         <div class="item">
           <div class="buttons">
             <span class="deletebutton"><i id="trash" class="fa fa-trash"></i></span>
@@ -93,12 +93,78 @@
             </button>
           </div>  
   </div>
-</div>
+</div>-->
+
+<div class="flex-container2">
+    <?php
+        require "../database/conndb.php";
+        $sql = "SELECT * FROM cart WHERE cuser = '$userid'";
+        $result = mysql_query($sql, $connection);
+        
+    ?>
+      <table class="admin_detail">
+        
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Brand</th>
+              <th>Details</th>
+              <th>Action</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php
+              $i = 1;
+              while ($row = mysql_fetch_array($result)) {
+              ?>
+              <tr>
+                <td><?php echo $i; ?></td>
+                <td><?php echo $row['cproduct_name'];?><input type="hidden" name="cproduct_name" value="<?php echo $row['cproduct_name'];?>"></td>
+                <td><?php echo $row['cprice'];?><input type="hidden" name="cprice" value="<?php echo $row['cprice'];?>"></td>
+                <td><?php echo $row['cbrand'];?><input type="hidden" name="cbrand" value="<?php echo $row['cbrand'];?>"></td>
+                <td><?php echo $row['cdetails'];?><input type="hidden" name="cdetails" value="<?php echo $row['cdetails'];?>"></td>
+                <td>
+                  <form method="POST" action="addcart.php">
+                    <input type="hidden" name="cuser" value="<?php echo @$data['username'];?>">
+                    <input type="hidden" name="payment" value="credit card">
+                    <input type="submit" name="button" value="Buy">  
+                  </form>
+                </td>
+                <td>
+                  <form method="POST" action="cartdelete.php">
+                    <input type="hidden" name="cartID" value="<?php echo $row['cartID'];?>">
+                    <button class="delete">Delete</button>
+                  </form>
+                </td>
+              </tr>
+              <?php
+              $i++;
+              }
+            ?>
+          </tbody>
+      </table>
+  </div>
+
 </div>
 
     <div class="total">
       <div class="totalprice">Total:</div>
-      <div class="displayprice">RM1549</div>
+
+      <div class="displayprice">
+        <?php
+        require "../database/conndb.php";
+        $sql = "SELECT * FROM cart WHERE cuser = '$userid'";
+        $result = mysql_query("SELECT sum(cprice) FROM cart");
+        while ($row = mysql_fetch_array($result)){
+        ?>
+          RM <?php echo $row['sum(cprice)']?>
+      <?php
+          }
+      ?>
+      </div>
       <a href="checkout.php"><p class="checkoutbtn">Checkout</p>
     </div>
 

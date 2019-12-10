@@ -1,4 +1,4 @@
-<?php
+	<?php
 	@session_start();
 	include "../database/conndb.php";
 
@@ -80,6 +80,7 @@
 		<form method="POST" action="addcart.php">
 			<table class="admin_detail">
 				<input type="hidden" name="cuser" value="<?php echo @$data['username'];?>">
+				<!--<input type="hidden" name="itemID" value="<?php echo @$date['itemID'];?>">-->
 			    <thead>
 			      <tr>
 			        <th>No.</th>
