@@ -25,7 +25,7 @@
 	<link rel="stylesheet"type="text/css"href="../css/userdeis.css"/>
 	<script type="text/javascript" src="../js/userdetails.js"></script>
 </head>
-<body>
+<body onload='document.Signup.nophone.focus()'>
 	<header><!--top navigation-->
 		<title>User Details</title>
 		<link rel="stylesheet" type="text/css" href="indexdeis.css">
@@ -66,32 +66,32 @@
 	<h1> Update Details</h1>
 	<p>Please fill in this form</p><br>
 
-		<form name="Userdetail" onreset="myAlertFunction()" action="updateuserdetails.php" method="post" onsubmit="return(validate());">		
+		<form name="Userdetail" onreset="myAlertFunction()" onsubmit="return(validate());" action="updateuserdetails.php" method="post" onsubmit="return(validate());">		
 		<input type="hidden" name="userID" value="<?php echo $userID;?>">
 		<label for="fname"><b>First name</b></label>
-		<input type="text"placeholder="First Name"name="firstname" value="<?php echo @$data['firstname']?>"/>
+		<input type="text"placeholder="First Name"name="firstname" id="FName" value="<?php echo @$data['firstname']?>"/>
 		<br>
 		<label for="lname"><b>Last name</b></label>
-		<input type="text"placeholder="Last Name"name="lastname" value="<?php echo @$data['lastname']?>" />
+		<input type="text"placeholder="Last Name"name="lastname" id="LName" value="<?php echo @$data['lastname']?>" />
 		<br>
 		<label for="username"><b>Username</b></label>
 		<input type="text"placehlder="username"name="username" value="<?php echo @$data['username']?>" readonly />
 		<br>
 		<label for="Nophone"><b>No.Phone</b></label>
-		<input type="text"placehlder="Nophone"name="nophone" value="<?php echo @$data['nophone']?>" />
+		<input type="text"placehlder="Nophone"name="nophone" value="<?php echo @$data['nophone']?>" onload='document.Userdetail.nophone.focus()' required />
 		<br>
 		<label for="email"><b>Email</b></label>
-		<input type="text"placeholder="email id"name="email" value="<?php echo @$data['email']?>" required />
+		<input type="text"placeholder="email id="Email" name="email" value="<?php echo @$data['email']?>" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Must be in proper email format (example: superclap09@suju.sm)" onfocus="myFunction(this)" required />
 		<br>
 		<label for="psw"><b>Password</b></label>
-		<input type="password"placeholder="password"name="password" value="<?php echo @$data['password']?>" required />
+		<input type="password"placeholder="password"name="password" value="<?php echo @$data['password']?>" id="password" pattern="^(?=.*[a-z])(?=.*[0-9])(?=.*[^\w\*])[^\s]{6,}$" title="Must contain at least 6 digits, one number, one uppercase and lowercase letter and no space allowed" onfocus="myFunction(this)" required />
 		<br>
 		<label for="conpsw"><b>Confirm Password</b></label>
-		<input type="password"placeholder="Confirm password"name="conpsw" value="<?php echo @$data['password']?>"required/>
+		<input type="password"placeholder="Confirm password"name="conpsw" value="<?php echo @$data['password']?>" id="ConfirmPassword" onfocus="myFunction(this)" required/>
 		<br>
 		<label for="Gender"><b>Gender:</b></label>
-		<input class="gender" type="radio" name="gender" value="Male" <?php if (@$data['gender'] == 'Male') echo 'checked'?> > Male
-		<input class="gender" type="radio" name="gender" value="Female" <?php if (@$data['gender'] == 'Female') echo 'checked'?> > Female<br>
+		<input class="gender" type="radio" name="gender" id="gender" value="Male" <?php if (@$data['gender'] == 'Male') echo 'checked'?> > Male
+		<input class="gender" type="radio" name="gender" id="gender" value="Female" <?php if (@$data['gender'] == 'Female') echo 'checked'?> > Female<br>
 		<br>
 		<label for="address"><b>Address</b></label>
 		<input type="text"placeholder="address"name="address" cols="40"rows="2" value="<?php echo @$data['address']?>" />
@@ -129,7 +129,7 @@
 				
 				<button type="reset" name="resetbtn" class="button"value="reset the form">Clear</button>
 
-				<button type="submit"name="submit"class="button"value="submited">Update</button><br><br>
+				<button type="submit"name="submit"class="button"value="submited" onclick="phonenumber(document.Userdetail.nophone)">Update</button><br><br>
 
 				<button class="btnuserpage"><a href="userdetails.php">Cancel</a></button>
 			
