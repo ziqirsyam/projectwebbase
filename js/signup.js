@@ -11,7 +11,7 @@ function validate()
   if( document.Signup.lastname.value == "" )
   {
     alert( "Please provide your Last Name! in uppercase, lowercase or mix only" );
-    document.myform.LName.focus() ;
+    document.Signup.Lastname.focus() ;
     return false;
   }
 
@@ -55,23 +55,23 @@ function validate()
 }
 
 function validateFName() {
-  var x = document.myform.getElementById("FName").pattern;
+  var x = document.Signup.getElementById("FName").pattern;
 }
 
 function validateFName() {
-  var x = document.myform.getElementById("LName").pattern;
+  var x = document.Signup.getElementById("LName").pattern;
 }
 
 function validateEmail() {
-  var x = document.myform.getElementById("Email").pattern;
+  var x = document.Signup.getElementById("Email").pattern;
 }
 
 function validategender(){
-  var x = document.myform.getElementById("gender").required;
+  var x = document.Signup.getElementById("gender").required;
 }
 
 function validateTerms(){
-  var x = document.myform.getElementById("Terms").required;
+  var x = document.Signup.getElementById("Terms").required;
 }
 
 function myAlertFunction() {
